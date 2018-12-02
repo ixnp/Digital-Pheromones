@@ -39,21 +39,36 @@ body {
   background-repeat: no-repeat;
   min-height: 100vh; }
 
-.u-center-text {
-  text-align: center; }
+.container {
+  display: grid;
+  grid-template-rows: 8rem 80vh min-content 40vw repeat(7, min-content);
+  grid-template-columns: 1fr repeat(7, [col-start] minmax(min-content, 20rem) [col-end]) 1fr; }
 
-.u-margin-bottom-small {
-  margin-bottom: 1.5Srem; }
+.navigation {
+  background-color: var(--color-primary-dark);
+  grid-column: 1/-1; }
 
-.u-margin-bottom-med {
-  margin-bottom: 4rem; }
+.navigation-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
 
-.u-margin-bottom-big {
-  margin-bottom: 8rem; }
+.menu {
+  display: flex;
+  flex-direction: row; }
 
-.card {
-  background-color: red;
-  height: 50rem;
-  transition: all .8s; }
-  .card:hover {
-    transform: rotateY(180deg); }
+.menu li {
+  list-style-type: none;
+  padding: 1rem; }
+
+.btn-contact-us {
+  justify-content: end; }
+
+.contact {
+  background-color: var(--color-primary-dark); }
+
+.experience {
+  background-color: var(--color-grey-light-3); }
+
+.Video {
+  grid-column: 2 5; }

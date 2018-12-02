@@ -1,0 +1,28 @@
+.navigation{
+  background-color: var(--color-primary-dark);
+  grid-column: 1/-1;
+ 
+  
+}
+
+.navigation-inner{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ 
+}
+
+.menu{
+  display: flex;
+  flex-direction: row;
+
+}
+.menu li{
+  list-style-type:none;
+  padding: 1rem;
+
+}
+
+.btn-contact-us{
+  justify-content: end;
+}
