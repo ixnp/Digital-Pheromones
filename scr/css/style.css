@@ -1,6 +1,7 @@
 :root {
   --color-primary: #eb2f64;
   --color-primary-light: rgb(33, 237, 252);
+  --color-primary-mid: rgb(87, 167, 172);
   --color-primary-dark: rgb(33, 71, 73);
   --color-grey-light-1: #faf9f9;
   --color-grey-light-2: #f4f2f2;
@@ -39,10 +40,14 @@ body {
   background-repeat: no-repeat;
   min-height: 100vh; }
 
+.container > * {
+  padding: 40px;
+  font-size: 2.5rem; }
+
 .container {
   display: grid;
   grid-template-rows: 8rem 80vh min-content 40vw repeat(7, min-content);
-  grid-template-columns: 1fr repeat(7, [col-start] minmax(min-content, 20rem) [col-end]) 1fr; }
+  grid-template-columns: 1fr repeat(7, [col-start] minmax(min-content, 20rem) [col-end]) 1fr [full-end]; }
 
 .navigation {
   background-color: var(--color-primary-dark);
@@ -61,14 +66,22 @@ body {
   list-style-type: none;
   padding: 1rem; }
 
-.btn-contact-us {
-  justify-content: end; }
-
 .contact {
-  background-color: var(--color-primary-dark); }
+  background-color: var(--color-primary-mid);
+  grid-column: 7 / full-end;
+  grid-row: 5; }
 
 .experience {
-  background-color: var(--color-grey-light-3); }
+  background-color: var(--color-grey-light-3);
+  grid-column: 1/-1; }
 
-.Video {
-  grid-column: 2 5; }
+.video {
+  grid-column: 1/-1; }
+
+.companies {
+  background-color: var(--color-primary-mid);
+  grid-column: 1 / span 6;
+  grid-row: 5; }
+
+footer {
+  grid-column: 1/-1; }
