@@ -1,6 +1,29 @@
 .container{
   & >*{
-    padding: 40px;
+    padding: 1.1rem;
     font-size: 2.5rem;
+  }
+}
+
+
+
+  
+.btn {
+  background-color: var(--color-primary-dark);
+  color: var(--color-grey-light-4);
+  border:none;
+  border-radius: 1rem;
+  
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 1rem 1.8rem;
+  transition: all .2s;
+  
+  &-contact-us{
+    background-color: var(--color-primary-mid);
+  }
+
+  &:hover{
+    background-color: var(--color-primary-light);
   }
 }

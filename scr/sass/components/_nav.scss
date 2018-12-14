@@ -1,7 +1,9 @@
 .navigation{
   background-color: var(--color-primary-dark);
   grid-column: 1/-1;
- 
+  display: grid;
+  align-items: start;
+  margin:0;
   
 }
 

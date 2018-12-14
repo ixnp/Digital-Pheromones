@@ -3,3 +3,20 @@
   grid-template-rows: 8rem 80vh min-content 40vw repeat(7, min-content);  
   grid-template-columns: minmax(6rem,1fr) repeat(7,[col-start] minmax(min-content, 20rem)[col-end]) minmax(6rem,1fr) [full-end];
 }
+
+.logo-contact-wrapper{
+  background-image: linear-gradient(to bottom right, var(--color-primary-dark), var(--color-primary-light));
+  grid-column: 1/-1;
+  width: 100%;
+  padding:0;
+  margin:-40;
+  display: grid;
+ 
+  grid-template-columns: minmax(6rem,1fr) repeat(7,[col-start] minmax(min-content, 20rem)[col-end]) minmax(6rem,1fr) [full-end];
+}
+.project-wrapper{
+  background-color: var( --color-grey-dark-3);
+  grid-column: 1/-1;
+  grid-row: 3;
+
+}

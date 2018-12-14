@@ -1,5 +1,4 @@
 :root {
-  --color-primary: #eb2f64;
   --color-primary-light: rgb(33, 237, 252);
   --color-primary-mid: rgb(87, 167, 172);
   --color-primary-dark: rgb(33, 71, 73);
@@ -41,17 +40,48 @@ body {
   min-height: 100vh; }
 
 .container > * {
-  padding: 40px;
+  padding: 1.1rem;
   font-size: 2.5rem; }
+
+.btn {
+  background-color: var(--color-primary-dark);
+  color: var(--color-grey-light-4);
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 1rem 1.8rem;
+  transition: all .2s; }
+  .btn-contact-us {
+    background-color: var(--color-primary-mid); }
+  .btn:hover {
+    background-color: var(--color-primary-light); }
 
 .container {
   display: grid;
   grid-template-rows: 8rem 80vh min-content 40vw repeat(7, min-content);
   grid-template-columns: minmax(6rem, 1fr) repeat(7, [col-start] minmax(min-content, 20rem) [col-end]) minmax(6rem, 1fr) [full-end]; }
 
+.logo-contact-wrapper {
+  background-image: linear-gradient(to bottom right, var(--color-primary-dark), var(--color-primary-light));
+  grid-column: 1/-1;
+  width: 100%;
+  padding: 0;
+  margin: -40;
+  display: grid;
+  grid-template-columns: minmax(6rem, 1fr) repeat(7, [col-start] minmax(min-content, 20rem) [col-end]) minmax(6rem, 1fr) [full-end]; }
+
+.project-wrapper {
+  background-color: var(--color-grey-dark-3);
+  grid-column: 1/-1;
+  grid-row: 3; }
+
 .navigation {
   background-color: var(--color-primary-dark);
-  grid-column: 1/-1; }
+  grid-column: 1/-1;
+  display: grid;
+  align-items: start;
+  margin: 0; }
 
 .navigation-inner {
   display: flex;
@@ -67,9 +97,28 @@ body {
   padding: 1rem; }
 
 .contact {
-  background-color: var(--color-primary-mid);
+  color: var(--color-grey-dark-1);
   grid-column: 7 / full-end;
   grid-row: 5; }
+
+.contact h4 {
+  line-height: 1; }
+
+.contact textarea {
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid var(--color-grey-dark-1);
+  margin-top: 1rem;
+  width: 90%;
+  height: 19rem;
+  background-color: transparent; }
+
+.contact input {
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid var(--color-grey-dark-1);
+  width: 90%;
+  background-color: transparent; }
 
 .experience {
   background-color: var(--color-grey-light-3);
@@ -79,11 +128,11 @@ body {
   grid-column: 1/-1; }
 
 .companies {
-  background-color: var(--color-primary-mid);
+  padding: 1rem;
   grid-column: 1 / span 6;
   grid-row: 5;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
   grid-gap: 6rem; }
   .companies h1 {
     grid-column: 1/ -1; }
