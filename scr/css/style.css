@@ -71,10 +71,14 @@ body {
   display: grid;
   grid-template-columns: minmax(6rem, 1fr) repeat(7, [col-start] minmax(min-content, 20rem) [col-end]) minmax(6rem, 1fr) [full-end]; }
 
-.project-wrapper {
+.projects {
   background-color: var(--color-grey-dark-3);
   grid-column: 1/-1;
   grid-row: 3; }
+
+.experiences {
+  grid-column: 1/-1;
+  grid-row: 4; }
 
 .navigation {
   background-color: var(--color-primary-dark);
@@ -120,9 +124,14 @@ body {
   width: 90%;
   background-color: transparent; }
 
+.experiences {
+  margin: 15rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 7rem; }
+
 .experience {
-  background-color: var(--color-grey-light-3);
-  grid-column: 1/-1; }
+  background-color: var(--color-grey-light-2); }
 
 .video {
   grid-column: 1/-1; }
