@@ -3,6 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
         <link rel="stylesheet" href="scr/css/style.css">
        
        
@@ -13,20 +15,23 @@
     <script></script>
     <body>
       <div class="container">
-      <header class="navigation">
-        <nav class="navigation-inner">
-          <div class="logo">logo</div>
-          <!-- menu logo -->
-          <div class="menu">
-            <li ><button class="btn btn-contact-us">contact us</button></li>
-            <li>Home</li>
-            <li>Projects</li>
-            <li>About</li>
-            <li>Contact</li>
-          </div>
-        </nav>
-      </header>
+   
       <div class="video">
+          <header class=" navigation">
+              <nav class="navigation-inner">
+                <div class="logo">
+                  <img class="logo logo_img" src="scr/img/logo.png" alt="">
+                </div>
+                <!-- menu logo -->
+                <div class="menu">
+                  <li ><button class="btn btn-contact-us">contact us</button></li>
+                  <li>Home</li>
+                  <li>Projects</li>
+                  <li>About</li>
+                  <li>Contact</li>
+                </div>
+              </nav>
+            </header>
         <h2>Video</h2>
       </div>
       <!-- <div class="video">
@@ -39,13 +44,24 @@
      
       <section class="projects">
         
-        <div class="project project_header ">Projects</div>
+        <h1 class="project project_header ">Projects</h1>
         <div class="project project_carousel ">
-          <div class="project project_carousel__items project_carousel__items1 ">Exit Reality</div>
-          <div class="project project_carousel__items project_carousel__items2">Ocorina</div>
-          <div class="project project_carousel__items project_carousel__items3">Sayin It Sam</div>
+          <li class="project project_carousel__items project_carousel__items1 ">Exit Reality</li>
+          <li class="project project_carousel__items project_carousel__items2">Ocorina</li>
+          <li class="project project_carousel__items project_carousel__items3">Sayin It Sam</li>
         </div>
-        <div class="project project_description">description</div>
+        <div class="project project_description">
+          <div class="project_description__text">
+            <h3 class="project_name">Name</h3>
+            <h4 class="subheader">SubHeader</h4>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, maiores sint. Eveniet odio cumque obcaecati laborum eius ullam sint consectetur illo, quaerat non atque dolore reprehenderit doloremque nam commodi? Dolorem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, maiores sint. Eveniet odio cumque obcaecati laborum eius ullam sint consectetur illo, quaerat non atque dolore reprehenderit doloremque nam commodi? Dolorem.
+
+            </p>
+          </div>
+            <img class="project_description__image__item" src="scr/img/exitReality.jpg" alt="">
+        </div>
+        
       
       </section>
     
@@ -125,9 +141,13 @@
         <button class="btn">Submit</button>
       </div>
    
-      <footer></footer>
+    
 </div>
 
       
     </body>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
 </html>
