@@ -6,7 +6,8 @@
   margin:0;
   position: fixed;
   right: 0;
-  top:0
+  top:0;
+  color: var(--color-grey-light-3);
   
 }
 
@@ -31,6 +32,11 @@
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  &:hover{
+    color: var(--color-primary-light);
+
+
+  }
 
 }
 

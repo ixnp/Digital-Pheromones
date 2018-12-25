@@ -1,29 +1,31 @@
-.container{
-  & >*{
+.container {
+  & > * {
     padding: 1.1rem;
     font-size: 2.5rem;
   }
 }
 
-
-
-  
 .btn {
   background-color: var(--color-primary-dark);
   color: var(--color-grey-light-4);
-  border:none;
+  border: none;
   border-radius: 1rem;
-  
-  font-size: 1.5rem;
+
+  font-size: 2rem;
+  font-weight: 900;
   text-transform: uppercase;
   padding: 1rem 1.8rem;
-  transition: all .2s;
-  
-  &-contact-us{
-    background-color: var(--color-primary-mid);
-  }
+  transition: all 0.2s;
 
-  &:hover{
-    background-color: var(--color-primary-light);
+  &_contact {
+    background-color: rgba(2, 126, 161, 0.8);
+
+    &:hover {
+      background-image: linear-gradient(
+        to bottom right,
+        var(--color-primary-light),
+        var(--color-primary-light)
+      );
+    }
   }
 }

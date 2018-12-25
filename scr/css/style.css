@@ -54,14 +54,15 @@ p, h4 {
   color: var(--color-grey-light-4);
   border: none;
   border-radius: 1rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-weight: 900;
   text-transform: uppercase;
   padding: 1rem 1.8rem;
-  transition: all .2s; }
-  .btn-contact-us {
-    background-color: var(--color-primary-mid); }
-  .btn:hover {
-    background-color: var(--color-primary-light); }
+  transition: all 0.2s; }
+  .btn_contact {
+    background-color: rgba(2, 126, 161, 0.8); }
+    .btn_contact:hover {
+      background-image: linear-gradient(to bottom right, var(--color-primary-light), var(--color-primary-light)); }
 
 .container {
   display: grid;
@@ -105,7 +106,8 @@ p, h4 {
   margin: 0;
   position: fixed;
   right: 0;
-  top: 0; }
+  top: 0;
+  color: var(--color-grey-light-3); }
 
 .navigation-inner {
   display: flex;
@@ -122,6 +124,8 @@ p, h4 {
   position: -webkit-sticky;
   position: sticky;
   top: 0; }
+  .menu li:hover {
+    color: var(--color-primary-light); }
 
 .logo {
   grid-column: 1;
