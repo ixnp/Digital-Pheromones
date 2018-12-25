@@ -98,11 +98,14 @@ p, h4 {
   grid-template-columns: repeat(8, 1fr); }
 
 .navigation {
-  grid-column: 1/-1;
+  grid-column: 2/-1;
   grid-row: 1;
   display: grid;
   align-items: start;
-  margin: 0; }
+  margin: 0;
+  position: fixed;
+  right: 0;
+  top: 0; }
 
 .navigation-inner {
   display: flex;
@@ -115,11 +118,21 @@ p, h4 {
 
 .menu li {
   list-style-type: none;
-  padding: 1rem; }
+  padding: 1rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0; }
 
 .logo {
+  grid-column: 1;
+  grid-row: 1;
   margin-top: -1rem;
-  width: 10rem; }
+  width: 10rem;
+  position: fixed; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
 
 .contact {
   color: var(--color-grey-dark-1);
