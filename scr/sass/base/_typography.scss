@@ -6,7 +6,7 @@
 }
 
 .btn {
-  background-color: var(--color-primary-dark);
+  background-color: var(--color-primary-mid-2);
   color: var(--color-grey-light-4);
   border: none;
   border-radius: 1rem;
@@ -16,9 +16,9 @@
   text-transform: uppercase;
   padding: 1rem 1.8rem;
   transition: all 0.2s;
-
+  font-family: 'Roboto', sans-serif;
   &_contact {
-    background-color: rgba(2, 126, 161, 0.8);
+    
 
     &:hover {
       background-image: linear-gradient(
@@ -27,5 +27,17 @@
         var(--color-primary-light)
       );
     }
+   
+}
+&_submit {
+      
+  
+  &:hover {
+    background-image: linear-gradient(
+      to bottom right,
+      var(--color-primary-dark),
+      var(--color-primary-dark-2)
+    );
   }
+}
 }
