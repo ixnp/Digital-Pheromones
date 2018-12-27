@@ -1,0 +1,43 @@
+.container {
+  & > * {
+    padding: 1.1rem;
+    font-size: 2.5rem;
+  }
+}
+
+.btn {
+  background-color: var(--color-primary-mid-2);
+  color: var(--color-grey-light-4);
+  border: none;
+  border-radius: 1rem;
+
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 1rem 1.8rem;
+  transition: all 0.2s;
+  font-family: 'Roboto', sans-serif;
+  &_contact {
+    
+
+    &:hover {
+      background-image: linear-gradient(
+        to bottom right,
+        var(--color-primary-light),
+        var(--color-primary-light)
+      );
+    }
+   
+}
+&_submit {
+      
+  
+  &:hover {
+    background-image: linear-gradient(
+      to bottom right,
+      var(--color-primary-dark),
+      var(--color-primary-dark-2)
+    );
+  }
+}
+}

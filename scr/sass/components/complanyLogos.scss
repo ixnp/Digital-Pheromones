@@ -1,0 +1,16 @@
+.companies{
+  padding: 1rem;
+
+  grid-column: 1 / span 6;
+  grid-row: 5;
+   
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  grid-gap: 6rem;
+  & h1{
+    grid-column: 1/ -1;
+  }
+  
+}
+
+

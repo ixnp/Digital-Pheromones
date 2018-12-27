@@ -1,0 +1,29 @@
+.contact{
+  color: var( --color-grey-light-4);
+  grid-column: 7 / full-end;
+  grid-row: 5;
+   background-image: linear-gradient(to  bottom , var(--color-primary-dark-2), var(--color-primary-light));
+  border-radius: 8%;
+ 
+}
+
+.contact h4{
+  
+  line-height: 1;
+}
+.contact textarea{
+  border:0;
+  outline:0;
+  border-bottom: 1px solid var( --color-grey-dark-1);
+  margin-top: 1rem;
+  width: 90%;
+  height:19rem;
+  background-color: transparent;
+}
+.contact input{
+  border:0;
+  outline:0;
+  border-bottom: 1px solid var( --color-grey-dark-1);
+  width: 90%;
+  background-color: transparent;
+}
