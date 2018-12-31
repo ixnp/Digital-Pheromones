@@ -8,6 +8,11 @@
 .contact {
   grid-column: 7 / full-end;
   grid-row: 6;
+   @media only screen and (max-width: 1000px) {
+      
+          grid-column: 1/-1;
+          grid-row: 7;
+    }
 }
 .companies{
   grid-row: 6;
@@ -18,6 +23,11 @@
   display: grid;
  
   grid-template-columns: minmax(6rem,1fr) repeat(7,[col-start] minmax(min-content, 20rem)[col-end]) minmax(6rem,1fr) [full-end];
+@media only screen and (max-width: 1000px) {
+      
+          grid-column: 1/-1;
+          
+    }
 }
 .projects {
   
@@ -29,7 +39,7 @@
 
 }
 .experiences {
-  grid-column: 2/9;
+  grid-column: 1 / -1;
   grid-row: 4;
   // margin: 15rem 0;
   display: grid;

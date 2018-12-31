@@ -1,22 +1,42 @@
 .experiences {
- 
- 
 }
 
 .experience {
-  color: var(--color-grey-light-3);
+  color: var(--color-primary-mid-2);
   display: grid;
-  background-color: var(--color-primary-dark-2);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: fit-content(40%);
+  background-color: var(--color-primary-grey-light);
   border-radius: 8%;
-  justify-content: center;
-  align-content: center;
-  &_icon{
-    height:10rem;
-    width: 4rem;
-    
-  }
-  &_header{
-    
-  }
-}
+  padding: 1rem;
+ 
 
+  &_icon {
+    justify-self: center;
+    grid-column: 1 / -1;
+    grid-row: 1;
+    height: 8rem;
+    width: 8rem;
+    margin: 1rem;
+    fill: var(--color-primary-mid-2);
+  }
+
+  &_header {
+    color: var(--color-primary-dark-2);
+    font-weight: 900;
+    justify-self: center;
+     margin-top: 2rem;
+    margin-bottom: .5rem;
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+  &__items {
+    font-size: 2rem;
+    justify-self: center;
+    text-align: center;
+    grid-column: 1 / -1;
+    grid-row: 3;
+  }
+
+}
