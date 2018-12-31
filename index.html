@@ -6,11 +6,9 @@
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
         <link rel="stylesheet" href="scr/css/style.css">
-       
-       
-        
-  
-        <title>DP </title>
+       <script>"https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.amd.min.js"</script>
+
+        <title>DigitalPheromones</title>
     </head>
     <script></script>
     <body>
@@ -24,24 +22,28 @@
               <nav class="navigation-inner">
                 
                 <!-- menu logo -->
-                <div class="menu">
+                <div class="menu" id="menu">
+                  <div class="menu_wrapper_off">
+                  <li><a class="nav nav_large" href=".video">Home</a></li>
+                  <li ><a class="nav nav_large" href=".projects">Projects</a></li>
+                  <li><a class="nav nav_large" href=".experiences">About</a></li>
                   
-                  <li><a class="nav" href=".video">Home</a></li>
-                  <li ><a class="nav" href=".projects">Projects</a></li>
-                  <li><a class="nav" href=".experiences">About</a></li>
-                  <li><a class="nav  btn btn_contact" href=".companies">Contact</a></li>
+                  <li><a class="nav nav_large btn" id="btn_nav" href=".companies">Contact</a></li>
+                  </div>
+                  <li class="nav hamburger" id="hamburger"><svg class="experience_icon icon-embed>"><use xlink:href="scr/css/sprite.svg#icon-menu"></use></svg></li>
+
                 </div>
               </nav>
             </header>
-        <h1 class="landing landing_heading">Digital Pheromones</h1>
-        <h4 class="landing landing_heading__sub">Making stuff cool with flashy lights</h4>
-        <img class="landing landing_logo" src="scr/img/logo.png" alt="">
-        <div class="social_links" >
+        <h1 class="video_landing video_landing_heading">Digital Pheromones</h1>
+        <h4 class="video_landing video_landing_heading__sub">Making stuff cool with flashy lights</h4>
+        <img class="video_landing video_landing_logo" src="scr/img/logo.png" alt="">
+        <!-- <div class="social_links" >
         <li class="links"><svg class="links social_links_items" ><use xlink:href="scr/css/sprite.svg#icon-github" class="SL"></use></svg></li>
         <li class="links"><svg class="links social_links_items"><use xlink:href="scr/css/sprite.svg#icon-facebook2"></use></svg></li>
         <li class="links"><svg class= "links social_links_items"><use xlink:href="scr/css/sprite.svg#icon-lab"></use></svg></li>
         <li class="links"><svg class="links social_links_items"><use xlink:href="scr/css/sprite.svg#icon-attachment"></use></svg></li>
-      </div>
+      </div> -->
 
         
       </div>
@@ -68,52 +70,75 @@
             <h4 class="subheader">SubHeader</h4>
             <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, maiores sint. Eveniet odio cumque obcaecati laborum eius ullam sint consectetur illo, quaerat non atque dolore reprehenderit doloremque nam commodi? Dolorem.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, maiores sint. Eveniet odio cumque obcaecati laborum eius ullam sint consectetur illo, quaerat non atque dolore reprehenderit doloremque nam commodi? Dolorem.
-
             </p>
           </div>
             <img class="project_description__image__item" src="scr/img/exitReality.jpg" alt="">
         </div>
-        
-      
+
       </section>
-    
-      
-     
         <section class="experiences">
           <!-- <h2>experince</h2> -->
           <div class="experience stacks">
               <svg class="experience_icon icon-embed>"><use xlink:href="scr/css/sprite.svg#icon-embed2"></use></svg>
-              <h3 class=" experince_header">Technology</h3>
-
-              <div class="stacks">Stack</div>
-              <div class="stacks">Stack</div>
-              <div class="stacks">Stack</div>
-              <div class="stacks">Stack</div>
-              <div class="stacks">Stack</div>
-              <div class="stacks">Stack</div>
+              <h3 class="experience_header">Development</h3>
+            <div class="experience__items experience__items_col1">
+              <div class="stacks experience__items_col1">UNREAL</div>
+              <div class="stacks experience__items_col2">Node.js</div>
+                <div class="stacks experience__items_col2">Python</div>
+             
+              <div class="stacks experience__items_col1">IOS</div>
+              <div class="stacks experience__items_col2">C</div>
+              <div class="stacks experience__items_col1">Unity</div>
+             
             </div>
+           
+              </div>
           <div class="experience hardwear"><svg class="experience_icon icon-powerplug"><use xlink:href="scr/css/sprite.svg#icon-power-cord"></use></svg>
-            <h3 class=" experince_header">Hardwear</h3>
-            <div class="stacks">Stack</div>
-            <div class="stacks">Stack</div>
-            <div class="stacks">Stack</div>
-            <div class="stacks">Stack</div>
-            <div class="stacks">Stack</div>
-            <div class="stacks">Stack</div></div>
+            <h3 class="experience_header">Hardwear</h3>
+          <div class="experience__items experience__items_col1">
+            <div class="stacks experience__items_col1">UNREAL</div>
+            <div class="stacks experience__items_col2">Node.js</div>
+            <div class="stacks experience__items_col2">Python</div>
+          
+            <div class="stacks experience__items_col1">IOS</div>
+            <div class="stacks experience__items_col2">C</div>
+            <div class="stacks experience__items_col1">Unity</div>
+          
+          </div>
+            </div>
+          
           <div class="experience Design"><svg class="experience_icon icon-clipboard"><use xlink:href="scr/css/sprite.svg#icon-clipboard"></use></svg>
-            <h3 class=" experince_header">Design</h3>
-            <div class="stacks">Stack</div>
-            <div class="stacks">Stack</div>
-            <div class="stacks">Stack</div>
-            <div class="stacks">Stack</div>
-            <div class="stacks">Stack</div>
-            <div class="stacks">Stack</div></div>
+            <h3 class="experience_header">Design</h3>
+          <div class="experience__items experience__items_col1">
+            <div class="stacks experience__items_col1">UNREAL</div>
+            <div class="stacks experience__items_col2">Node.js</div>
+            <div class="stacks experience__items_col2">Python</div>
+          
+            <div class="stacks experience__items_col1">IOS</div>
+            <div class="stacks experience__items_col2">C</div>
+            <div class="stacks experience__items_col1">Unity</div>
+          
+          </div>
+            </div>
+          
         </section>
         
-        <section class="team">
-          <div class="team team_members"></div>
-          <div class="team team_members"></div>
-          <div class="team team_members"></div>
+        <section class="about">
+          <h2 class="about_header">A little about us</h2>
+          <p class ="about_info">Put a description of your buisness modle and core values here</p>
+          <h2 class="team_header">Meet the crew</h2>
+          <div class="team team_members">
+            <img src="" alt="" class="team_photo">
+            <h3 class="team_name"><a href=""></a></h3>
+          </div>
+          <div class="team team_members">
+            <img src="" alt="" class="team_photo">
+            <h3 class="team_name"><a href=""></a></h3>
+          </div>
+          <div class="team team_members">
+            <img src="" alt="" class="team_photo">
+            <h3 class="team_name"><a href=""></a></h3>
+          </div>
         </section>
         <section class="companies">
           <div class="companie-logo">
