@@ -112,9 +112,10 @@ textarea {
   grid-column: 1 / -1;
   grid-row: 4;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 50rem));
   grid-gap: 4rem;
-  width: 100%; }
+  width: 100%;
+  justify-content: space-around; }
 
 .video {
   grid-column: 1 / -1;
@@ -123,8 +124,13 @@ textarea {
   grid-template-columns: repeat(8, 1fr); }
 
 .about {
+  grid-gap: 1rem;
+  display: grid;
   grid-column: 1 / -1;
-  grid-row: 5; }
+  grid-row: 5;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 25rem));
+  grid-template-rows: repeat(auto-fit, minmax(3rem, 11rem));
+  justify-content: center; }
 
 .navigation {
   grid-column: 2/-1;
@@ -333,11 +339,15 @@ a {
   .project_carousel__items {
     flex-direction: row; }
 
+.experiences {
+  margin-bottom: 3rem;
+  margin-top: 3rem; }
+
 .experience {
   color: var(--color-primary-mid-2);
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, 1fr);
+  grid-template-rows: repeat(auto-fit, 1fr);
   grid-template-rows: fit-content(40%);
   background-color: var(--color-primary-grey-light);
   border-radius: 8%;
@@ -419,3 +429,58 @@ a {
 
 footer {
   grid-column: 1/-1; }
+
+.about {
+  color: var(--color-primary-dark-2);
+  background-image: linear-gradient(to bottom right, rgba(2, 26, 64, 0.8), rgba(2, 126, 161, 0.8));
+  -webkit-clip-path: polygon(0 0, 100% 12%, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 12%, 100% 100%, 0 100%);
+  grid-column: 1 / -1;
+  margin: 3rem;
+  justify-content: center; }
+
+.about_header {
+  color: white;
+  grid-column: 1 / -1;
+  grid-row: 2;
+  justify-self: center;
+  padding-bottom: 1rem;
+  text-align: center; }
+
+.about_info {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  justify-self: center;
+  text-align: justify; }
+
+.header_sub {
+  grid-column: 1 / -1;
+  grid-row: 4;
+  color: var(color-primary-mid-2);
+  justify-self: center; }
+
+.about_members {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-row: 5;
+  grid-template-rows: repeat(auto-fit, minmax(3rem, 25rem)); }
+
+.about_members_img {
+  max-width: 250px;
+  grid-column: 1 / -1;
+  grid-row: 1;
+  justify-self: center;
+  border-radius: 50%; }
+  @media only screen and (max-width: 700px) {
+    .about_members_img {
+      max-width: 200px; } }
+
+.about_name {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  justify-self: center;
+  margin: 2rem; }
+  @media only screen and (max-width: 700px) {
+    .about_name {
+      font-size: 2.2rem;
+      margin: 1rem; } }
