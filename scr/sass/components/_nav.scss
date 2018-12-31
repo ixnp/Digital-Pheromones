@@ -74,20 +74,38 @@ a {
 
   
 .dropdown_menu {
-    display: flex;
+  display: flex;
   flex-direction: column-reverse;
+  list-style-type:none;
  
-
 }
 .dropdown {
    display: flex;
   // background-color: var(--color-primary-mid-2);
+list-style-type:none;
+  padding: 1rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  &:hover{
+    color: var(--color-primary-light);
+
+
+  }
 }
 
 .dropdown_btn {
   display: flex;
 }
 
+
 .menu_wrapper{
+
 background-color: var(--color-primary-mid-2);
 }
+
+.menu_wrapper_off{
+ display: flex;
+  flex-direction: row;
+}
+

@@ -96,8 +96,8 @@ textarea {
   padding: 0;
   margin: -40;
   display: grid;
-  grid-template-columns: minmax(6rem, 1fr) repeat(7, [col-start] minmax(min-content, 20rem) [col-end]) minmax(6rem, 1fr) [full-end]; }
-  @media only screen and (max-width: 1000px) {
+  grid-template-columns: repeat(3, minmax(16rem, 1fr)); }
+  @media only screen and (max-width: 700px) {
     .companies {
       grid-column: 1/-1; } }
 
@@ -182,16 +182,28 @@ a {
 
 .dropdown_menu {
   display: flex;
-  flex-direction: column-reverse; }
+  flex-direction: column-reverse;
+  list-style-type: none; }
 
 .dropdown {
-  display: flex; }
+  display: flex;
+  list-style-type: none;
+  padding: 1rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0; }
+  .dropdown:hover {
+    color: var(--color-primary-light); }
 
 .dropdown_btn {
   display: flex; }
 
 .menu_wrapper {
   background-color: var(--color-primary-mid-2); }
+
+.menu_wrapper_off {
+  display: flex;
+  flex-direction: row; }
 
 .contact {
   color: var(--color-primary-mid-2);
@@ -394,12 +406,16 @@ a {
   list-style-type: none; }
 
 .companies {
-  padding: 1rem;
+  padding: 10rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-  grid-gap: 6rem; }
+  justify-items: center;
+  grid-gap: 10rem; }
   .companies h1 {
     grid-column: 1/ -1; }
+
+.companie_logo {
+  width: 200px; }
 
 footer {
   grid-column: 1/-1; }
