@@ -1,12 +1,15 @@
 .companies{
-  padding: 1rem;
+ padding: 10rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-  grid-gap: 6rem;
+ justify-items: center;
+  grid-gap: 10rem;
   & h1{
     grid-column: 1/ -1;
   }
   
 }
 
-
+.companie_logo{
+  width: 200px;
+}
