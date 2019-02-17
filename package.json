@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/ixnp/zohii#readme",
   "dependencies": {
+    "handlebars": "^4.1.0",
     "node-sass": "^4.10.0",
     "npm-run-all": "^4.1.5"
   }

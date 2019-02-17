@@ -338,6 +338,8 @@ a {
   display: flex; }
   .project_carousel__items {
     flex-direction: row; }
+  .project_carousel li:hover {
+    color: var(--color-primary-light); }
 
 .experiences {
   margin-bottom: 3rem;

@@ -6,7 +6,7 @@
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
         <link rel="stylesheet" href="scr/css/style.css">
-       <script>"https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.amd.min.js"</script>
+
 
         <title>DigitalPheromones</title>
     </head>
@@ -38,13 +38,7 @@
         <h1 class="video_landing video_landing_heading">Digital Pheromones</h1>
         <h4 class="video_landing video_landing_heading__sub">Making stuff cool with flashy lights</h4>
         <img class="video_landing video_landing_logo" src="scr/img/logo.png" alt="">
-        <!-- <div class="social_links" >
-        <li class="links"><svg class="links social_links_items" ><use xlink:href="scr/css/sprite.svg#icon-github" class="SL"></use></svg></li>
-        <li class="links"><svg class="links social_links_items"><use xlink:href="scr/css/sprite.svg#icon-facebook2"></use></svg></li>
-        <li class="links"><svg class= "links social_links_items"><use xlink:href="scr/css/sprite.svg#icon-lab"></use></svg></li>
-        <li class="links"><svg class="links social_links_items"><use xlink:href="scr/css/sprite.svg#icon-attachment"></use></svg></li>
-      </div> -->
-
+      
         
       </div>
       <!-- <div class="video">
@@ -58,19 +52,25 @@
      
       <section class="projects">
         
-        <h1 class="project project_header ">Projects</h1>
-        <div class="project project_carousel ">
-          <li class="project project_carousel__items project_carousel__items1 ">Exit Reality</li>
-          <li class="project project_carousel__items project_carousel__items2">Ocorina</li>
-          <li class="project project_carousel__items project_carousel__items3">Sayin It Sam</li>
+        <h1 class="project project_header">Projects</h1>
+        <div class="project project_carousel">
+          <li class="project project_carousel__items project_carousel__items1" value='0'>Exit Reality</li>
+          <li class="project project_carousel__items project_carousel__items2" value='1'>Song Bird</li>
+          <li class="project project_carousel__items project_carousel__items3" value='2'>Sayin It Sam</li>
         </div>
         <div class="project project_description">
           <div class="project_description__text">
-            <h3 class="project_name">Name</h3>
+            <!-- <h3 class="project_name">Name</h3>
             <h4 class="subheader">SubHeader</h4>
             <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, maiores sint. Eveniet odio cumque obcaecati laborum eius ullam sint consectetur illo, quaerat non atque dolore reprehenderit doloremque nam commodi? Dolorem.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, maiores sint. Eveniet odio cumque obcaecati laborum eius ullam sint consectetur illo, quaerat non atque dolore reprehenderit doloremque nam commodi? Dolorem.
-            </p>
+            </p> -->
+            <script id="project-template" type="text/x-handlebars-template">
+              <h3 class="project_name">{{project}}</h3>
+              <h4 class="subheader">{{role}}</h4>
+              <p class="description">{{about}}
+              </p>
+            </script>
           </div>
             <img class="project_description__image__item" src="scr/img/exitReality.jpg" alt="">
         </div>
@@ -93,8 +93,8 @@
             </div>
            
               </div>
-          <div class="experience hardwear"><svg class="experience_icon icon-powerplug"><use xlink:href="scr/css/sprite.svg#icon-power-cord"></use></svg>
-            <h3 class="experience_header">Hardwear</h3>
+          <div class="experience hardware"><svg class="experience_icon icon-powerplug"><use xlink:href="scr/css/sprite.svg#icon-power-cord"></use></svg>
+            <h3 class="experience_header">hardware</h3>
           <div class="experience__items experience__items_col1">
             <div class="stacks experience__items_col1">UNREAL</div>
             <div class="stacks experience__items_col2">Node.js</div>
@@ -193,6 +193,9 @@
     src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
-    <script src="scr/css/scripts/navigation.js"></script>
+        <script  type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
+
+    <script  type='text/javascript' src="scr/css/scripts/navigation.js"></script>
+    <script  type='text/javascript' src="scr/data/projects.js"></script>
    
 </html>

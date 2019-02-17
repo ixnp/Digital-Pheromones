@@ -1,4 +1,6 @@
-[
+'use strict';
+let projectJson = {
+  "projects": [
   {
   "project" : "Exit Reality",
   "url" : "http://exitrealityvr.com",
@@ -30,3 +32,30 @@
   "technologies" : "Game Stack: HTC Vive, Windows, Steam, Unity and Unreal. Hardware Stack: Arduino, Raspberry Pi, NodeJS, Python, C PCB designs, Various hardware sensors and I/O"
   }
 ]
+};
+
+$(document).ready(function(){
+  // let val = 0;
+  let projectTemplate = $('#project-template').html();
+  let compiledprojectTemplate = Handlebars.compile(projectTemplate);
+  let setup = compiledprojectTemplate(projectJson.projects[0])
+
+  $(".project_description__text").html(setup);
+
+
+  $(".project_carousel li").click(function () {
+   
+
+    let val = $(this).val();
+    console.log('hi', val)
+    $(".project_description__text").html(compiledprojectTemplate(projectJson.projects[val]));
+    
+  });
+
+  
+});
+ 
+// $(".project_carousel li").click(function(){
+//   let val = $(this).val();
+  
+// });

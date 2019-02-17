@@ -160,4 +160,7 @@
   &__items {
     flex-direction: row;
   }
+  li:hover{
+  color: var(--color-primary-light);
+  }
 }
