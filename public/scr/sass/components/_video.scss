@@ -1,9 +1,12 @@
 .video{
-  background-image:linear-gradient(rgba(16, 53, 83, .5), rgba(2, 126, 161, 0.5)),url(../img/temp_video.PNG);
+  padding:0;
+   z-index: 1;
+  background-image:linear-gradient(rgba(16, 53, 83, .3), rgba(2, 126, 161, 0.3)),url(../img/landingGif.mp4);
   background-size: cover;
   background-repeat: no-repeat;
 
   &_landing {
+    z-index: 2;
   color: var(--color-grey-light-3);
   display: grid;
   grid-column: 1/-1;
@@ -12,7 +15,9 @@
 
   font-size:8rem;
   &_heading {
-    grid-row:3;
+    text-shadow: 2px 2px 8px var(--color-grey-dark-1);
+    z-index: 2;
+    grid-row:2;
     text-align: center;
        @media only screen and (max-width: 700px) {
          font-size:5rem;
@@ -21,6 +26,7 @@
   
 
   &_logo{
+    z-index: 2;
     grid-row: 2 / 3;
     grid-column: 5 / 7;
     width: 30rem;
@@ -29,8 +35,10 @@
     
   }
   &_heading__sub {
+    text-shadow: 2px 2px 8px var(--color-grey-dark-1);
+    z-index: 2;
         align-self: start;
-    grid-row: 4/7;
+    grid-row: 3/7;
     font-size:3.5rem;
     font-weight: 200;
         @media only screen and (max-width: 700px) {
@@ -55,3 +63,19 @@
  
 }
 
+.video_landing_gif {
+grid-column: 1/-1;
+grid-row: 1/-1;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+   z-index: 0;
+}
+
+.video_overlay {
+grid-row: 1/-1;
+  grid-column: 1/-1;
+  background-image:linear-gradient(rgba(16, 53, 83, .4), rgba(2, 126, 161, 0.4));
+  z-index: 1;
+}

@@ -1,7 +1,7 @@
 .companies{
  padding: 10rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
  justify-items: center;
   grid-gap: 10rem;
   & h1{
@@ -10,6 +10,11 @@
   
 }
 
-.companie_logo{
-  width: 200px;
+.company_logo{
+  width: 100px;
+}
+
+.company-headers{
+  grid-column: 1/ -1;
+  color: var(--color-grey-light-2)
 }

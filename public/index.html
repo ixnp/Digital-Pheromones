@@ -13,7 +13,7 @@
     <script></script>
     <body>
       <div class="container">
-   
+        
       <div class="video">
           <div class="logo">
               <img class="logo logo_img" src="scr/img/logo.png" alt="">
@@ -37,17 +37,14 @@
             </header>
         <h1 class="video_landing video_landing_heading">Digital Pheromones</h1>
         <h4 class="video_landing video_landing_heading__sub">Making stuff cool with flashy lights</h4>
-        <img class="video_landing video_landing_logo" src="scr/img/logo.png" alt="">
-      
-        
+        <!-- <img class="video_landing video_landing_logo" src="scr/img/logo.png" alt=""> -->
+       <div class="video video_overlay"></div>
+          <video autoplay muted loop id="myVideo" class="video video_landing_gif ">
+            <source src="scr/img/landingGif.mp4" type="video/mp4">
+          </video>
       </div>
-      <!-- <div class="video">
-        <div style="position: fixed; z-index: -99; width: 100%; height: 100%">
-          <iframe frameborder="0" height="100%" width="100%" 
-             src="https://www.youtube.com/embed/z8TVICcIt_0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </iframe>
-        </div> -->
-      <!-- </div> -->
+     
+
  
      
       <section class="projects">
@@ -60,11 +57,7 @@
         </div>
         <div class="project project_description">
           <div class="project_description__text">
-            <!-- <h3 class="project_name">Name</h3>
-            <h4 class="subheader">SubHeader</h4>
-            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, maiores sint. Eveniet odio cumque obcaecati laborum eius ullam sint consectetur illo, quaerat non atque dolore reprehenderit doloremque nam commodi? Dolorem.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, maiores sint. Eveniet odio cumque obcaecati laborum eius ullam sint consectetur illo, quaerat non atque dolore reprehenderit doloremque nam commodi? Dolorem.
-            </p> -->
+        
             <script id="project-template" type="text/x-handlebars-template">
               <h3 class="project_name">{{project}}</h3>
               <h4 class="subheader">{{role}}</h4>
@@ -77,7 +70,7 @@
 
       </section>
         <section class="experiences">
-          <!-- <h2>experince</h2> -->
+         
           <div class="experience stacks">
               <svg class="experience_icon icon-embed>"><use xlink:href="scr/css/sprite.svg#icon-embed2"></use></svg>
               <h3 class="experience_header">Development</h3>
@@ -142,47 +135,49 @@
           </div>
         </section>
         <section class="companies">
-          <div class="companie-logo">
-            <img class="companie-logo" src="scr/img/Lucasarts_logo.png" alt="Lucasarts_logo.png">
+          <h1 class="company-headers">Meet Our Partners</h1>
+          <div class="company-logo">
+            <img class="company-logo" src="scr/img/Lucasarts_logo.png" alt="Lucasarts_logo.png">
           </div>
-          <div class="companie_logo">
-            <img class="companie_logo" src="scr/img/NISSAN-LOGO.png" alt="Lucasarts_logo.png">
+          <div class="company_logo">
+            <img class="company_logo" src="scr/img/NISSAN-LOGO.png" alt="Lucasarts_logo.png">
           </div>
-          <div class="companie-logo">
-            <img class="companie_logo" src="scr/img/imax-logo.png" alt="Lucasarts_logo.png">
+          <div class="company-logo">
+            <img class="company_logo" src="scr/img/imax-logo.png" alt="Lucasarts_logo.png">
           </div>
-          <div class="companie-logo3">
-            <img class="companie_logo" src="scr/img/hotelzetta.png" alt="Lucasarts_logo.png">
+          <div class="company-logo3">
+            <img class="company_logo" src="scr/img/hotelzetta.png" alt="Lucasarts_logo.png">
           </div>
-          <div class="companie_logo">
-            <img class="companie_logo" src="scr/img/Columbia_Records.png" alt="Lucasarts_logo.png">
+          <div class="company_logo">
+            <img class="company_logo" src="scr/img/Columbia_Records.png" alt="Lucasarts_logo.png">
           </div>
-          <div class="companie-logo">
-            <img class="companie_logo" src="scr/img/Songbird_Logo_410x.png" alt="Lucasarts_logo.png">
+          <div class="company-logo">
+            <img class="company_logo" src="scr/img/Songbird_Logo_410x.png" alt="Lucasarts_logo.png">
           </div>
-          <div class="companie-logo">
-            <img class="companie_logo" src="scr/img/HTC.png" alt="Lucasarts_logo.png">
+          <div class="company-logo">
+            <img class="company_logo" src="scr/img/HTC.png" alt="Lucasarts_logo.png">
           </div>
-          <div class="companie-logo"><img class="companie_logo" src="scr/img/IGT.png" alt="Lucasarts_logo.png"></div>
+          <div class="company-logo"><img class="company_logo" src="scr/img/IGT.png" alt="Lucasarts_logo.png"></div>
           
         </section>
         
         
       <div class="contact">
+        <div class="contact-form">
         <h2 class="heading-2">Contact Us</h2>
-        <!-- <form action="MAILTO:enprocopios@gmail.com" method="post" enctype="text/plain" class="contact-form"> -->
-           <form class="contact-form"> 
+           <form action="mailto:Sonzohan@gmail.com?subject=From%20Digital%20Pheromones" method="POST" enctype="text/plain" class="contact-form"> 
           <h4 class="heading-4">name</h4>
-          <input type="text" class="name">
-          <h4 class="heading-4">email</h4>
-          <input type="text" class="email">
-          <h4 class="heading-4">subject</h4>
-          <input type="text" class="subject">
-          <h4 class="heading-4">message</h4>
-          <textarea type="text" class="message"></textarea>
-          <button class="btn btn_submit btn_submit_contact">Submit</button>
+          <input type="text" name="name" class="name">
+          <h4 class="heading-4" >email</h4>
+          <input type="email" name="email" class="email">
+          <h4 class="heading-4" >subject</h4>
+    
+          <input type="text" NAME="subject" class="subject">
+          <h4 class="heading-4" >message</h4>
+          <textarea type="text" name="message" class="message"></textarea>
+          <button class="btn btn_submit btn_submit_contact" value="Send">Submit</button>
         </form>
-        <!-- <button class="btn btn_submit">Submit</button> -->
+        </div>
       </div>
    
     

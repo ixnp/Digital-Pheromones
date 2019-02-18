@@ -2,7 +2,7 @@
 
 $(document).ready(function(){
   $(".btn_submit_contact").click(function(e) {
-    e.preventDefault();
+   
     let name = $(".name").val();
     let email = $(".email").val();
     let subject = $(".subject").val();
@@ -15,7 +15,13 @@ $(document).ready(function(){
     console.log('valid email')
     } else {
     console.log('not valid email')
+      e.preventDefault();
     };
+    
+    $(".contact-form").children('input').val('');
+    $(".contact-form").children('textarea').val('');
+  
+   
     
   });
 })
