@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm-run-all --parallel compile:sass live-server",
+    "start": "npm-run-all --parallel compile:sass node",
     "live-server": "live-server",
-    "compile:sass": "node-sass scr/sass/main.scss scr/css/style.css -w"
+    "node":"nodemon index.js",
+    "compile:sass": "node-sass public/scr/sass/main.scss public/scr/css/style.css -w"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/ixnp/zohii#readme",
   "dependencies": {
+    "express": "^4.16.4",
     "handlebars": "^4.1.0",
     "node-sass": "^4.10.0",
     "npm-run-all": "^4.1.5"
