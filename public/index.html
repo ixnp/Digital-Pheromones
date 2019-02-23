@@ -6,14 +6,14 @@
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
         <link rel="stylesheet" href="scr/css/style.css">
-       <script>"https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.amd.min.js"</script>
+
 
         <title>DigitalPheromones</title>
     </head>
     <script></script>
     <body>
       <div class="container">
-   
+        
       <div class="video">
           <div class="logo">
               <img class="logo logo_img" src="scr/img/logo.png" alt="">
@@ -37,47 +37,40 @@
             </header>
         <h1 class="video_landing video_landing_heading">Digital Pheromones</h1>
         <h4 class="video_landing video_landing_heading__sub">Making stuff cool with flashy lights</h4>
-        <img class="video_landing video_landing_logo" src="scr/img/logo.png" alt="">
-        <!-- <div class="social_links" >
-        <li class="links"><svg class="links social_links_items" ><use xlink:href="scr/css/sprite.svg#icon-github" class="SL"></use></svg></li>
-        <li class="links"><svg class="links social_links_items"><use xlink:href="scr/css/sprite.svg#icon-facebook2"></use></svg></li>
-        <li class="links"><svg class= "links social_links_items"><use xlink:href="scr/css/sprite.svg#icon-lab"></use></svg></li>
-        <li class="links"><svg class="links social_links_items"><use xlink:href="scr/css/sprite.svg#icon-attachment"></use></svg></li>
-      </div> -->
-
-        
+        <!-- <img class="video_landing video_landing_logo" src="scr/img/logo.png" alt=""> -->
+       <div class="video video_overlay"></div>
+          <video autoplay muted loop id="myVideo" class="video video_landing_gif ">
+            <source src="scr/img/landingGif.mp4"  type="video/mp4">
+          </video>
       </div>
-      <!-- <div class="video">
-        <div style="position: fixed; z-index: -99; width: 100%; height: 100%">
-          <iframe frameborder="0" height="100%" width="100%" 
-             src="https://www.youtube.com/embed/z8TVICcIt_0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </iframe>
-        </div> -->
-      <!-- </div> -->
+     
+
  
      
       <section class="projects">
         
-        <h1 class="project project_header ">Projects</h1>
-        <div class="project project_carousel ">
-          <li class="project project_carousel__items project_carousel__items1 ">Exit Reality</li>
-          <li class="project project_carousel__items project_carousel__items2">Ocorina</li>
-          <li class="project project_carousel__items project_carousel__items3">Sayin It Sam</li>
+        <h1 class="project project_header">Projects</h1>
+        <div class="project project_carousel">
+          <li class="project project_carousel__items project_carousel__items1" value='0'>Exit Reality</li>
+          <li class="project project_carousel__items project_carousel__items2" value='1'>Song Bird</li>
+          <li class="project project_carousel__items project_carousel__items3" value='2'>Sayin It Sam</li>
         </div>
         <div class="project project_description">
-          <div class="project_description__text">
-            <h3 class="project_name">Name</h3>
-            <h4 class="subheader">SubHeader</h4>
-            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, maiores sint. Eveniet odio cumque obcaecati laborum eius ullam sint consectetur illo, quaerat non atque dolore reprehenderit doloremque nam commodi? Dolorem.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, maiores sint. Eveniet odio cumque obcaecati laborum eius ullam sint consectetur illo, quaerat non atque dolore reprehenderit doloremque nam commodi? Dolorem.
-            </p>
+          <div class="project_description__text"></div>
+        
+            <script id="project-template" type="text/x-handlebars-template">
+              <h3 class="project_name">{{project}}</h3>
+              <h4 class="subheader">{{role}}</h4>
+              <p class="description">{{about}}
+              </p>
+            
           </div>
-            <img class="project_description__image__item" src="scr/img/exitReality.jpg" alt="">
+            <img class="project_description__image__item" src="{{imgurl}}" alt="">
         </div>
-
+        </script>
       </section>
         <section class="experiences">
-          <!-- <h2>experince</h2> -->
+         
           <div class="experience stacks">
               <svg class="experience_icon icon-embed>"><use xlink:href="scr/css/sprite.svg#icon-embed2"></use></svg>
               <h3 class="experience_header">Development</h3>
@@ -93,8 +86,8 @@
             </div>
            
               </div>
-          <div class="experience hardwear"><svg class="experience_icon icon-powerplug"><use xlink:href="scr/css/sprite.svg#icon-power-cord"></use></svg>
-            <h3 class="experience_header">Hardwear</h3>
+          <div class="experience hardware"><svg class="experience_icon icon-powerplug"><use xlink:href="scr/css/sprite.svg#icon-power-cord"></use></svg>
+            <h3 class="experience_header">hardware</h3>
           <div class="experience__items experience__items_col1">
             <div class="stacks experience__items_col1">UNREAL</div>
             <div class="stacks experience__items_col2">Node.js</div>
@@ -126,11 +119,12 @@
         <section class="about">
           <h2 class="about_header">A little about us</h2>
           <p class ="about_info">Put a description of your buisness modle and core values here</p>
-          <h2 class="team_header">Meet the crew</h2>
-          <div class="team team_members">
-            <img src="" alt="" class="team_photo">
-            <h3 class="team_name"><a href=""></a></h3>
+          <h3 class="header_sub">Meet the crew</h2>
+          <div class=" about_members">
+            <img class="about_members_img" src="scr/img/zac.png" alt="" >
+            <h3 class=" about_name">Dr. Zachary Rubin<a href=""></a></h3>
           </div>
+
           <div class="team team_members">
             <img src="" alt="" class="team_photo">
             <h3 class="team_name"><a href=""></a></h3>
@@ -141,46 +135,49 @@
           </div>
         </section>
         <section class="companies">
-          <div class="companie-logo">
-            <img class="companie-logo" src="scr/img/Lucasarts_logo.png" alt="Lucasarts_logo.png">
+          <h1 class="company-headers">Meet Our Partners</h1>
+          <div class="company-logo">
+            <img class="company-logo" src="scr/img/Lucasarts_logo.png" alt="Lucasarts_logo.png">
           </div>
-          <div class="companie_logo">
-            <img class="companie_logo" src="scr/img/NISSAN-LOGO.png" alt="Lucasarts_logo.png">
+          <div class="company_logo">
+            <img class="company_logo" src="scr/img/NISSAN-LOGO.png" alt="Lucasarts_logo.png">
           </div>
-          <div class="companie-logo">
-            <img class="companie_logo" src="scr/img/imax-logo.png" alt="Lucasarts_logo.png">
+          <div class="company-logo">
+            <img class="company_logo" src="scr/img/imax-logo.png" alt="Lucasarts_logo.png">
           </div>
-          <div class="companie-logo3">
-            <img class="companie_logo" src="scr/img/hotelzetta.png" alt="Lucasarts_logo.png">
+          <div class="company-logo3">
+            <img class="company_logo" src="scr/img/hotelzetta.png" alt="Lucasarts_logo.png">
           </div>
-          <div class="companie_logo">
-            <img class="companie_logo" src="scr/img/Columbia_Records.png" alt="Lucasarts_logo.png">
+          <div class="company_logo">
+            <img class="company_logo" src="scr/img/Columbia_Records.png" alt="Lucasarts_logo.png">
           </div>
-          <div class="companie-logo">
-            <img class="companie_logo" src="scr/img/Songbird_Logo_410x.png" alt="Lucasarts_logo.png">
+          <div class="company-logo">
+            <img class="company_logo" src="scr/img/Songbird_Logo_410x.png" alt="Lucasarts_logo.png">
           </div>
-          <div class="companie-logo">
-            <img class="companie_logo" src="scr/img/HTC.png" alt="Lucasarts_logo.png">
+          <div class="company-logo">
+            <img class="company_logo" src="scr/img/HTC.png" alt="Lucasarts_logo.png">
           </div>
-          <div class="companie-logo"><img class="companie_logo" src="scr/img/IGT.png" alt="Lucasarts_logo.png"></div>
+          <div class="company-logo"><img class="company_logo" src="scr/img/IGT.png" alt="Lucasarts_logo.png"></div>
           
         </section>
         
         
       <div class="contact">
+        <div class="contact-form">
         <h2 class="heading-2">Contact Us</h2>
-        <form action="" class="contact-form">
+           <form action="mailto:Sonzohan@gmail.com?subject=From%20Digital%20Pheromones" method="POST" enctype="text/plain" class="contact-form"> 
           <h4 class="heading-4">name</h4>
-          <input type="text" class="name">
-          <h4 class="heading-4">email</h4>
-          <input type="text" class="email">
-          <h4 class="heading-4">subject</h4>
-          <input type="text" class="subject">
-          <h4 class="heading-4">message</h4>
-          <textarea type="text" class="message"></textarea>
-          
+          <input type="text" name="name" class="name">
+          <h4 class="heading-4" >email</h4>
+          <input type="email" name="email" class="email">
+          <h4 class="heading-4" >subject</h4>
+    
+          <input type="text" NAME="subject" class="subject">
+          <h4 class="heading-4" >message</h4>
+          <textarea type="text" name="message" class="message"></textarea>
+          <button class="btn btn_submit btn_submit_contact" value="Send">Submit</button>
         </form>
-        <button class="btn btn_submit">Submit</button>
+        </div>
       </div>
    
     
@@ -192,6 +189,12 @@
     src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
-    <script src="scr/css/scripts/navigation.js"></script>
+        <script  type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
+
+    <script  type='text/javascript' src="scr/css/scripts/navigation.js"></script>
+    <script  type='text/javascript' src="scr/data/projects.js"></script>
+    <script type='text/javascript' src="scr/data/projects.js"></script>
+    <script type='text/javascript' src="scr/scripts/contact.js"></script>
+     
    
 </html>

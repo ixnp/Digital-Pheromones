@@ -1,19 +1,24 @@
 .experiences {
+  margin-bottom: 3rem;
+  margin-top: 3rem;
 }
 
 .experience {
   color: var(--color-primary-mid-2);
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, 1fr), ;
+  grid-template-rows: repeat(auto-fit, 1fr);
   grid-template-rows: fit-content(40%);
   background-color: var(--color-primary-grey-light);
   border-radius: 8%;
   padding: 1rem;
- 
+@media only screen and (min-width: 1500px) {
+      
+          
+    }
 
   &_icon {
-    justify-self: center;
+   justify-self: center;
     grid-column: 1 / -1;
     grid-row: 1;
     height: 8rem;

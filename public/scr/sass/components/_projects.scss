@@ -3,6 +3,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   padding: 2.5rem;
+
 }
 .project {
 
@@ -21,6 +22,7 @@
     z-index: 5;
   }
 
+ 
   &_carousel {
     
     grid-row: 2 / 3;
@@ -73,7 +75,7 @@
   }
 
 }
-    @media only screen and (max-width: 1000px) {
+    @media only screen and (max-width: 800px) {
  .project {
 
   color: var(--color-grey-light-3);
@@ -90,7 +92,6 @@
     justify-content: center;
     z-index: 5;
   }
-
   &_carousel {
     
     grid-row: 2 / 3;
@@ -99,6 +100,7 @@
   justify-content: center;
 
     &__items {
+      
     font-weight: 100;
     margin-left: 1rem;
     margin-right: 1rem;
@@ -149,7 +151,7 @@
  .project_carousel {
   display: flex;
   &__items {
-   display:none;
+   
   }
 }         
     }
@@ -158,5 +160,8 @@
   display: flex;
   &__items {
     flex-direction: row;
+  }
+  li:hover{
+  color: var(--color-primary-light);
   }
 }
