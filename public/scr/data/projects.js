@@ -6,7 +6,7 @@ let projectJson = {
   "url" : "http://exitrealityvr.com",
   "role" : "Technical Lead",
   "awards" : "contracts from IGT, IMAX, Nissan, Google and more. Recued CaptEX cost by up to $25,000 via discussions with hardware venders including HTC and HP",
-  "img" : "scr/img/exitReality.jpg",
+      "imgurl": "scr/img/exitReality.jpg",
   "about" : "Exit Reality develops, deploys and manages VR infrastructure and services for out-of-home distribution to meet the needs of B2C and B2B companies and the VR industry at large",
   "reviews" : "https://exitrealityvr.com/friends-and-partners",
   "technologies" : "Game Stack: HTC Vive, Windows, Steam, Unity and Unreal. Hardware Stack: Arduino, Raspberry Pi, NodeJS, Python, C PCB designs, Various hardware sensors and I/O"
@@ -16,7 +16,7 @@ let projectJson = {
   "url" : "https://www.songbirdocarina.com/collections/synesthesia-ocarinas",
   "role" : "Chief Technical Officer: Developed Atmel-based chips, created novel signal processing ...",
   "awards" : "FCC approval ",
-  "img" : "scr/img/OCARINA2.PNG",
+  "imgurl": "scr/img/ocarina2.PNG",
   "about" : "Exit Reality develops, deploys and manages VR infrastructure and services for out-of-home distribution to meet the needs of B2C and B2B companies and the VR industry at large",
   "reviews" : "https://exitrealityvr.com/friends-and-partners",
   "technologies" : "Game Stack: HTC Vive, Windows, Steam, Unity and Unreal. Hardware Stack: Arduino, Raspberry Pi, NodeJS, Python, C PCB designs, Various hardware sensors and I/O"
@@ -26,7 +26,7 @@ let projectJson = {
   "url" : "https://www.songbirdocarina.com/collections/synesthesia-ocarinas",
   "role" : "Chief Technical Officer: Developed Atmel-based chips, created novel signal processing ...",
   "awards" : "FCC approval ",
-  "img" : "scr/img/sam.PNG",
+  "imgurl": "scr/img/sam.PNG",
   "about" : "Exit Reality develops, deploys and manages VR infrastructure and services for out-of-home distribution to meet the needs of B2C and B2B companies and the VR industry at large",
   "reviews" : "https://exitrealityvr.com/friends-and-partners",
   "technologies" : "Game Stack: HTC Vive, Windows, Steam, Unity and Unreal. Hardware Stack: Arduino, Raspberry Pi, NodeJS, Python, C PCB designs, Various hardware sensors and I/O"

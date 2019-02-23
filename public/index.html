@@ -40,7 +40,7 @@
         <!-- <img class="video_landing video_landing_logo" src="scr/img/logo.png" alt=""> -->
        <div class="video video_overlay"></div>
           <video autoplay muted loop id="myVideo" class="video video_landing_gif ">
-            <source src="scr/img/landingGif.mp4" type="video/mp4">
+            <source src="scr/img/landingGif.mp4"  type="video/mp4">
           </video>
       </div>
      
@@ -56,18 +56,18 @@
           <li class="project project_carousel__items project_carousel__items3" value='2'>Sayin It Sam</li>
         </div>
         <div class="project project_description">
-          <div class="project_description__text">
+          <div class="project_description__text"></div>
         
             <script id="project-template" type="text/x-handlebars-template">
               <h3 class="project_name">{{project}}</h3>
               <h4 class="subheader">{{role}}</h4>
               <p class="description">{{about}}
               </p>
-            </script>
+            
           </div>
-            <img class="project_description__image__item" src="scr/img/exitReality.jpg" alt="">
+            <img class="project_description__image__item" src="{{imgurl}}" alt="">
         </div>
-
+        </script>
       </section>
         <section class="experiences">
          

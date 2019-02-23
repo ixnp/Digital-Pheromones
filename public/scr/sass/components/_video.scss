@@ -14,14 +14,16 @@
   justify-content: center;
 
   font-size:8rem;
+    @media only screen and (max-width: 700px) {
+         font-size:4rem;
+         
+    }
   &_heading {
     text-shadow: 2px 2px 8px var(--color-grey-dark-1);
     z-index: 2;
     grid-row:2;
     text-align: center;
-       @media only screen and (max-width: 700px) {
-         font-size:5rem;
-    }
+     
 }
   
 
@@ -47,6 +49,7 @@
     }
   }
 }
+
 }
 
 .social_links {
@@ -66,11 +69,18 @@
 .video_landing_gif {
 grid-column: 1/-1;
 grid-row: 1/-1;
-  right: 0;
-  bottom: 0;
+ 
   min-width: 100%; 
   min-height: 100%;
    z-index: 0;
+    //    @media only screen and (max-width: 500px) {
+    //       min-width: 50%; 
+    //       min-height: 50%;
+    // }
+    //   @media only screen and (max-width: 450px) {
+    //       min-width: 30%; 
+    //       min-height: 30%;
+    // }
 }
 
 .video_overlay {
@@ -78,4 +88,5 @@ grid-row: 1/-1;
   grid-column: 1/-1;
   background-image:linear-gradient(rgba(16, 53, 83, .4), rgba(2, 126, 161, 0.4));
   z-index: 1;
+
 }
