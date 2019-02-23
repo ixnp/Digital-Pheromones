@@ -5,8 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "npm-run-all --parallel compile:sass node",
-    "node":"node index.js",
+    "node": "node index.js",
     "compile:sass": "node-sass public/scr/sass/main.scss public/scr/css/style.css -w"
+  },
+  "engines": {
+    "node":"8.9.3"
   },
   "repository": {
     "type": "git",
@@ -20,6 +23,7 @@
   },
   "homepage": "https://github.com/ixnp/zohii#readme",
   "dependencies": {
+    "dotenv": "^6.2.0",
     "express": "^4.16.4",
     "handlebars": "^4.1.0",
     "node-sass": "^4.10.0",
