@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "start": "npm-run-all --parallel compile:sass node",
-    "live-server": "live-server",
     "node":"nodemon index.js",
     "compile:sass": "node-sass public/scr/sass/main.scss public/scr/css/style.css -w"
   },
