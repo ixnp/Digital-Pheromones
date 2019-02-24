@@ -1,9 +1,9 @@
 .companies{
- padding: 10rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
- justify-items: center;
-  grid-gap: 10rem;
+//  padding: 10rem;
+//   display: grid;
+//   grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+//  justify-items: center;
+//   grid-gap: 10rem;
   & h1{
     grid-column: 1/ -1;
   }
@@ -12,6 +12,7 @@
 
 .company_logo{
   width: 100px;
+  
 }
 
 .company-headers{

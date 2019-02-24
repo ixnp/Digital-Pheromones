@@ -98,7 +98,6 @@ textarea {
   grid-column: 1 / span 6;
   width: 100%;
   padding: 0;
-  margin: -40;
   display: grid;
   grid-template-columns: repeat(3, minmax(16rem, 1fr)); }
   @media only screen and (max-width: 700px) {
@@ -468,14 +467,8 @@ a {
   background-image: linear-gradient(rgba(16, 53, 83, 0.4), rgba(2, 126, 161, 0.4));
   z-index: 1; }
 
-.companies {
-  padding: 10rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-  justify-items: center;
-  grid-gap: 10rem; }
-  .companies h1 {
-    grid-column: 1/ -1; }
+.companies h1 {
+  grid-column: 1/ -1; }
 
 .company_logo {
   width: 100px; }
@@ -517,7 +510,6 @@ footer {
   justify-self: center; }
 
 .about_members {
-  grid-column: 1 / -1;
   display: grid;
   grid-row: 5;
   grid-template-rows: repeat(auto-fit, minmax(3rem, 25rem)); }

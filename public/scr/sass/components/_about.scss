@@ -1,3 +1,4 @@
+//items are rendering to the dom they are just not visible for some reason
 .about {
   color: var(--color-primary-dark-2);
   background-image:linear-gradient(to bottom right, rgba(2, 26, 64, .8), rgba(2, 126, 161, 0.8));
@@ -32,7 +33,7 @@ justify-content: center;
  
 }
 .about_members {
-    grid-column: 1 / -1;
+    // grid-column: 1 / -1;
   display: grid;
   grid-row: 5;
   grid-template-rows:repeat(auto-fit, minmax(3rem, 25rem));
