@@ -1,4 +1,6 @@
 let team = {
+  "header":"A little about us",
+  "values": "Put a description of your buisness modle and core values here",
   "teamMembers": [
     {
       "name": "Dr. Zachary Rubin",

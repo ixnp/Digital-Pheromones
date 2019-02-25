@@ -87,16 +87,16 @@
           
         </section>
         
-        <section class="about">
-
+        <section class="about team">
+       
+          <script id="team-template" type="text/x-handlebars-template">
       
-          <h2 class="about_header">A little about us</h2>
-          <p class ="about_info">Put a description of your buisness modle and core values here</p>
+          <h2 class="about_header">{{header}}</h2>
+          <p class ="about_info">{{values}}</p>
           
           <h3 class="header_sub">Meet the crew</h2>
-            <div class="team"></div>
+           
 
-         <script id="team-template" type="text/x-handlebars-template">
           {{#each teamMembers}}
             <div class="about_members">
               <img class="about_members_img" src="scr/img/{{img}}" alt="">
@@ -105,13 +105,13 @@
           {{/each}}
         </script>
         </section>
-        <section class="companies">
-          <!-- <h1 class="company-headers">Meet Our Partners</h1> -->
-          <div class="partners companies"></div>
+        <section class="companies ">
+          <h1 class="companies_header">Past Partners</h1>
+        <div class="partners"></div>
           <script id="partners-template" type="text/x-handlebars-template">
             {{#each logos}}
-           <div class="company-logo">
-              <img class="company_logo" src="{{imgurl}}" alt="Lucasarts_logo.png"/>
+           <div class=" company-logo">
+              <img class="partners company_logo" src="{{imgurl}}" alt="Lucasarts_logo.png"/>
           </div>
           {{/each}}
           </script>

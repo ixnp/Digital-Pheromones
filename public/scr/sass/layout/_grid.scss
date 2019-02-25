@@ -14,18 +14,14 @@
           grid-row: 7;
     }
 }
-.companies{
+.companies { 
   grid-row: 6;
   grid-column: 1 / span 6;
   width: 100%;
   padding:0;
-  // margin:-40;
   display: grid;
-
-  grid-template-columns: repeat(3, minmax(16rem, 1fr));
-
   @media only screen and (max-width: 700px) {
-      
+          
           grid-column: 1/-1;
           
     }
@@ -72,8 +68,8 @@
   display: grid;
   grid-column: 1 / -1;
   grid-row: 5;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 25rem));
-  grid-template-rows: repeat(auto-fit, minmax(3rem, 11rem));
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(4) 1fr;
   justify-content: center;
  
 }
