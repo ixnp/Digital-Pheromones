@@ -1,167 +1,261 @@
+
 .projects {
-  background-image:linear-gradient(rgba(2, 126, 161, 0.8), rgba(2, 126, 161, 0.8)),url(../img/exitReality.jpg);
+   background-image:linear-gradient(rgba(2, 126, 161, 0.8), rgba(2, 126, 161, 0.8));
+  padding: 2.5rem;
+  grid-column: 1 / -1;
+  grid-row: 3;
+
+}
+
+.project {
+  display: grid;
+  grid-template-rows: 1fr 1fr 3fr 3f1;
+  grid-template-columns: 1fr 1fr;
+    color: var(--color-grey-light-3);
+  &_header {
+    
+    grid-row: 1;
+    grid-column: 1 / -1;
+   
+    &_h1 {
+       font-size: 3.5rem;
+    font-weight: 750;
+    text-align: center;
+     
+    }
+  &_carousel {
+    grid-row: 2;
+         display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+    &_items {
+      list-style-type: none;
+    font-weight: 100;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    }
+    
+  }
+  }
+  &_template {
+ 
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 2.5rem;
-
-}
-.project {
-
-  color: var(--color-grey-light-3);
-  display: grid;
-  grid-column: 1 / -1;
-  grid-row: 1 / -1;
-  grid-gap: 6rem;
-
-  &_header {
-    font-size: 3.5rem;
-    font-weight: 750;
-    margin-top: -2rem;
-    grid-row: 1;
-    justify-content: center;
-    z-index: 5;
-  }
-
- 
-  &_carousel {
-    
-    grid-row: 2 / 3;
-    display: flex;
-  flex-direction: row;
-  justify-content: center;
-
-    &__items {
-    font-weight: 100;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    }
-    
-  }
-
-  &_description {
-    grid-row: 3 / 13;  
     background-color: rgba(2, 26, 64, .8);
-    margin-left: 5%;
-    margin-right: 5%;
-
-    grid-template-columns: repeat(2, 1fr);
-    &__text {
-      
-      margin-left: 4%;
-      h3{
-        font-size: 2.6rem;
-        
-      }
-      h4{
-        
-        font-size: 1.9rem;
-      }
-      p{
-        margin-top: 3%;
-        font-size: 1.5rem;
-        text-align: justify;
-      }
-    }
-    &__image__item {
-      margin: 8%;
-      grid-column: 2; 
-      width: 80%;
-  
-      
-    }
-
-
-  
+    display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr;
+    grid-column: 1 / -1;
+    
   }
-
-}
-    @media only screen and (max-width: 800px) {
- .project {
-
-  color: var(--color-grey-light-3);
-  display: grid;
-  grid-column: 1 / -1;
-  grid-row: 1 / -1;
-  grid-gap: 1rem;
-
-  &_header {
-    font-size: 3.5rem;
-    font-weight: 750;
-    margin-top: -2rem;
+  &_text {
     grid-row: 1;
-    justify-content: center;
-    z-index: 5;
-  }
-  &_carousel {
-    
-    grid-row: 2 / 3;
-    display: flex;
-  flex-direction: row;
-  justify-content: center;
-
-    &__items {
-      
-    font-weight: 100;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    }
-    
-  }
-
-  &_description {
-    grid-row: 3 / 13;  
-    background-color: rgba(2, 26, 64, .8);
-    margin-left: 5%;
-    margin-right: 5%;
-
-    grid-template-columns: repeat(2, 1fr);
-    &__text {
-         grid-column: 1 / -1; 
-         padding-right: 3rem;
-      margin-left: 4%;
-      h3{
-        font-size: 2.6rem;
+    grid-column: 1;
+    display: grid;
+    grid-template-rows: .5fr .5fr 2fr;
+    color: var(--color-grey-light-3);
+     padding: 3rem;
+    &_project_name {
+      grid-row: 1;
+      font-size: 2.6rem;
         
-      }
-      h4{
-        
-        font-size: 1.9rem;
-      }
-      p{
-           
-        margin-top: 3%;
-        font-size: 1.5rem;
-        text-align: justify;
-      }
     }
-    &__image__item {
-      margin: 8%;
-      grid-column: 1 / -1; 
-      width: 80%;
-  
-      
+    &_subheader {
+      grid-row: 2;
+          font-size: 2rem;
+    
     }
-
-
-  
-  }
-
-}
-  // going to put buttons here       
- .project_carousel {
-  display: flex;
-  &__items {
+   &_description {
+     grid-row: 3;
+      font-size: 1.9rem;
+text-align: justify;
+   }
    
   }
-}         
-    }
-
-.project_carousel {
-  display: flex;
-  &__items {
-    flex-direction: row;
-  }
-  li:hover{
-  color: var(--color-primary-light);
+  &_image {
+    grid-row: 1;
+    grid-column: 2;
+     width: 90%;
+     padding: 5%
+     
   }
 }
+
+// .projects {
+//   background-image:linear-gradient(rgba(2, 126, 161, 0.8), rgba(2, 126, 161, 0.8)),url(../img/exitReality.jpg);
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   padding: 2.5rem;
+//    grid-column: 1 / -1;
+//   grid-row: 3;
+//   display: grid;
+//   grid-template-rows: 1fr 3fr;
+//   grid-template-columns:1fr 1fr;
+//   color: var(--color-grey-light-3);
+
+// }
+// .project {
+  
+//   color: var(--color-grey-light-3);
+//   display: grid;
+//   grid-column: 1 / -1;
+//   grid-row: 1 / -1;
+//   grid-gap: 6rem;
+
+//   &_header {
+//     font-size: 3.5rem;
+//     font-weight: 750;
+//     margin-top: -2rem;
+//   
+//     justify-content: center;
+//     z-index: 5;
+//   }
+
+ 
+//   &_carousel {
+    
+//     grid-row: 2 / 3;
+//     display: flex;
+//   flex-direction: row;
+//   justify-content: center;
+
+//     &__items {
+//     font-weight: 100;
+//     margin-left: 1rem;
+//     margin-right: 1rem;
+//     }
+    
+//   }
+
+//   &_description__text {
+//     grid-row: 3 / 13;  
+//     grid-column: 1 /-1; 
+//     background-color: rgba(2, 26, 64, .8);
+//     margin-left: 5%;
+//     margin-right: 5%;
+
+//     grid-template-columns: 1fr 1fr;
+   
+      
+//       margin-left: 4%;
+//       h3{
+//         font-size: 2.6rem;
+        
+//       }
+//       h4{
+        
+//         font-size: 1.9rem;
+//       }
+//       p{
+//         margin-top: 3%;
+//         font-size: 1.5rem;
+//         text-align: justify;
+//       }
+//     }
+   
+  
+//   }
+
+//   .text{
+//     grid-row:1;
+//     grid-column: 1;
+//   }
+
+
+// .project_description__image__item {
+//  margin: 8%;
+//  grid-row: 1;
+// grid-column: 2 / 3; 
+// width: 80%;
+// }
+//     @media only screen and (max-width: 800px) {
+//  .project {
+
+//   color: var(--color-grey-light-3);
+//   display: grid;
+//   grid-column: 1 / -1;
+//   grid-row: 1 / -1;
+//   grid-gap: 1rem;
+
+//   &_header {
+//     font-size: 3.5rem;
+//     font-weight: 750;
+//     margin-top: -2rem;
+//     grid-row: 1;
+//     justify-content: center;
+//     z-index: 5;
+//   }
+//   &_carousel {
+    
+//     grid-row: 2 / 3;
+//     display: flex;
+//   flex-direction: row;
+//   justify-content: center;
+
+//     &__items {
+      
+//     font-weight: 100;
+//     margin-left: 1rem;
+//     margin-right: 1rem;
+//     }
+    
+//   }
+
+//   &_description {
+//     grid-row: 3 / 13;  
+//     background-color: rgba(2, 26, 64, .8);
+//     margin-left: 5%;
+//     margin-right: 5%;
+
+//     grid-template-columns: repeat(2, 1fr);
+//     &__text {
+//          grid-column: 1 / -1; 
+//          padding-right: 3rem;
+//       margin-left: 4%;
+//       h3{
+//         font-size: 2.6rem;
+        
+//       }
+//       h4{
+        
+//         font-size: 1.9rem;
+//       }
+//       p{
+           
+//         margin-top: 3%;
+//         font-size: 1.5rem;
+//         text-align: justify;
+//       }
+//     }
+//     &__image__item {
+//       margin: 8%;
+//       grid-column: 1 / -1; 
+//       width: 80%;
+  
+      
+//     }
+
+
+  
+//   }
+
+// }
+//   // going to put buttons here       
+//  .project_carousel {
+//   display: flex;
+//   &__items {
+   
+//   }
+// }         
+//     }
+
+// .project_carousel {
+//   display: flex;
+//   &__items {
+//     flex-direction: row;
+//   }
+//   li:hover{
+//   color: var(--color-primary-light);
+//   }
+// }

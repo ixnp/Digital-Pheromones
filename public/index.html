@@ -45,120 +45,79 @@
       </div>
      
 
- 
-     
-      <section class="projects">
+      <section class="projects project">
         
-        <h1 class="project project_header">Projects</h1>
-        <div class="project project_carousel">
-          <li class="project project_carousel__items project_carousel__items1" value='0'>Exit Reality</li>
-          <li class="project project_carousel__items project_carousel__items2" value='1'>Song Bird</li>
-          <li class="project project_carousel__items project_carousel__items3" value='2'>Sayin It Sam</li>
+        <h1 class=" project_header project_header_h1">Projects</h1>
+        <div class="project_header project_header_carousel">
+          <li class="project_header project_header_carousel_items project_carousel__items1" value='0'>Exit Reality</li>
+          <li class="project_header project_header_carousel_items project_carousel__items2" value='1'>Song Bird</li>
+          <li class="project_header project_header_carousel_items project_carousel__items3" value='2'>Sayin It Sam</li>
         </div>
-        <div class="project project_description">
-          <div class="project_description__text"></div>
+        <div class="project_description project_template">
+          <div class="project_description"></div>
         
             <script id="project-template" type="text/x-handlebars-template">
-              <h3 class="project_name">{{project}}</h3>
-              <h4 class="subheader">{{role}}</h4>
-              <p class="description">{{about}}
+              <div class="project_text">
+              <h3 class=" project_text_project_name">{{project}}</h3>
+              <h4 class=" project_text_subheader">{{role}}</h4>
+              <p class=" project_text_description">{{about}}
               </p>
-            
+            </div>
           </div>
-            <img class="project_description__image__item" src="{{imgurl}}" alt="">
+            <img class="project_image" src="{{imgurl}}" alt="">
         </div>
+        
         </script>
       </section>
         <section class="experiences">
          
-          <div class="experience stacks">
-              <svg class="experience_icon icon-embed>"><use xlink:href="scr/css/sprite.svg#icon-embed2"></use></svg>
-              <h3 class="experience_header">Development</h3>
-            <div class="experience__items experience__items_col1">
-              <div class="stacks experience__items_col1">UNREAL</div>
-              <div class="stacks experience__items_col2">Node.js</div>
-                <div class="stacks experience__items_col2">Python</div>
+          <script id="experience-template" type="text/x-handlebars-template">
+          {{#each experience}}
+            <div class="experience stacks">
              
-              <div class="stacks experience__items_col1">IOS</div>
-              <div class="stacks experience__items_col2">C</div>
-              <div class="stacks experience__items_col1">Unity</div>
+            <svg class="experience_icon  {{icon}}"><use xlink:href="scr/css/sprite.svg#{{xlink}}"></use></svg>
+                
              
+              <h3 class="experience_header">{{title}}</h3>
+            <ul class="experience__items experience__items_col1">
+              {{content}}
+            </ul>
             </div>
-           
-              </div>
-          <div class="experience hardware"><svg class="experience_icon icon-powerplug"><use xlink:href="scr/css/sprite.svg#icon-power-cord"></use></svg>
-            <h3 class="experience_header">hardware</h3>
-          <div class="experience__items experience__items_col1">
-            <div class="stacks experience__items_col1">UNREAL</div>
-            <div class="stacks experience__items_col2">Node.js</div>
-            <div class="stacks experience__items_col2">Python</div>
-          
-            <div class="stacks experience__items_col1">IOS</div>
-            <div class="stacks experience__items_col2">C</div>
-            <div class="stacks experience__items_col1">Unity</div>
-          
-          </div>
-            </div>
-          
-          <div class="experience Design"><svg class="experience_icon icon-clipboard"><use xlink:href="scr/css/sprite.svg#icon-clipboard"></use></svg>
-            <h3 class="experience_header">Design</h3>
-          <div class="experience__items experience__items_col1">
-            <div class="stacks experience__items_col1">UNREAL</div>
-            <div class="stacks experience__items_col2">Node.js</div>
-            <div class="stacks experience__items_col2">Python</div>
-          
-            <div class="stacks experience__items_col1">IOS</div>
-            <div class="stacks experience__items_col2">C</div>
-            <div class="stacks experience__items_col1">Unity</div>
-          
-          </div>
-            </div>
+            {{/each}}
+            </script>
           
         </section>
         
-        <section class="about">
-          <h2 class="about_header">A little about us</h2>
-          <p class ="about_info">Put a description of your buisness modle and core values here</p>
-          <h3 class="header_sub">Meet the crew</h2>
-          <div class=" about_members">
-            <img class="about_members_img" src="scr/img/zac.png" alt="" >
-            <h3 class=" about_name">Dr. Zachary Rubin<a href=""></a></h3>
-          </div>
-
-          <div class="team team_members">
-            <img src="" alt="" class="team_photo">
-            <h3 class="team_name"><a href=""></a></h3>
-          </div>
-          <div class="team team_members">
-            <img src="" alt="" class="team_photo">
-            <h3 class="team_name"><a href=""></a></h3>
-          </div>
-        </section>
-        <section class="companies">
-          <h1 class="company-headers">Meet Our Partners</h1>
-          <div class="company-logo">
-            <img class="company-logo" src="scr/img/Lucasarts_logo.png" alt="Lucasarts_logo.png">
-          </div>
-          <div class="company_logo">
-            <img class="company_logo" src="scr/img/NISSAN-LOGO.png" alt="Lucasarts_logo.png">
-          </div>
-          <div class="company-logo">
-            <img class="company_logo" src="scr/img/imax-logo.png" alt="Lucasarts_logo.png">
-          </div>
-          <div class="company-logo3">
-            <img class="company_logo" src="scr/img/hotelzetta.png" alt="Lucasarts_logo.png">
-          </div>
-          <div class="company_logo">
-            <img class="company_logo" src="scr/img/Columbia_Records.png" alt="Lucasarts_logo.png">
-          </div>
-          <div class="company-logo">
-            <img class="company_logo" src="scr/img/Songbird_Logo_410x.png" alt="Lucasarts_logo.png">
-          </div>
-          <div class="company-logo">
-            <img class="company_logo" src="scr/img/HTC.png" alt="Lucasarts_logo.png">
-          </div>
-          <div class="company-logo"><img class="company_logo" src="scr/img/IGT.png" alt="Lucasarts_logo.png"></div>
+        <section class="about team">
+       
+          <script id="team-template" type="text/x-handlebars-template">
+      
+          <h2 class="about_header">{{header}}</h2>
+          <p class ="about_info">{{values}}</p>
           
+          <h3 class="header_sub">Meet the crew</h2>
+           
+
+          {{#each teamMembers}}
+            <div class="about_members">
+              <img class="about_members_img" src="scr/img/{{img}}" alt="">
+              <h3 class="about_name">{{name}}<a href="{{link}}"></a></h3>
+            </div>
+          {{/each}}
+        </script>
+        </section>
+        <section class="companies ">
+          <h1 class="companies_header">Past Partners</h1>
+        <div class="partners"></div>
+          <script id="partners-template" type="text/x-handlebars-template">
+            {{#each logos}}
+           <div class=" company-logo">
+              <img class="partners company_logo" src="{{imgurl}}" alt="Lucasarts_logo.png"/>
+          </div>
+          {{/each}}
+          </script>
+         
+
         </section>
         
         
@@ -192,7 +151,9 @@
         <script  type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
 
     <script  type='text/javascript' src="scr/css/scripts/navigation.js"></script>
-    <script  type='text/javascript' src="scr/data/projects.js"></script>
+    <script type='text/javascript' src="scr/data/experience.js"></script>
+      <script type='text/javascript' src="scr/data/team.js"></script>
+    <script  type='text/javascript' src="scr/data/logos.js"></script>
     <script type='text/javascript' src="scr/data/projects.js"></script>
     <script type='text/javascript' src="scr/scripts/contact.js"></script>
      
