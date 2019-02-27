@@ -40,7 +40,7 @@ $(document).ready(function(){
   let compiledprojectTemplate = Handlebars.compile(projectTemplate);
   let setup = compiledprojectTemplate(projectJson.projects[0]);
 
-  $('.project_description__text').html(setup);
+  $('.project_description').html(setup);
 
 
   $('.project_carousel li').click(function () {
@@ -48,7 +48,7 @@ $(document).ready(function(){
 
     let val = $(this).val();
     console.log('hi', val)
-    $('.project_description__text').html(compiledprojectTemplate(projectJson.projects[val]));
+    $('.project_description').html(compiledprojectTemplate(projectJson.projects[val]));
     
   });
 

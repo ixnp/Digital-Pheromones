@@ -45,25 +45,26 @@
       </div>
      
 
-      <section class="projects">
+      <section class="projects project">
         
-        <h1 class="project project_header">Projects</h1>
-        <div class="project project_carousel">
-          <li class="project project_carousel__items project_carousel__items1" value='0'>Exit Reality</li>
-          <li class="project project_carousel__items project_carousel__items2" value='1'>Song Bird</li>
-          <li class="project project_carousel__items project_carousel__items3" value='2'>Sayin It Sam</li>
+        <h1 class=" project_header project_header_h1">Projects</h1>
+        <div class="project_header project_header_carousel">
+          <li class="project_header project_header_carousel_items project_carousel__items1" value='0'>Exit Reality</li>
+          <li class="project_header project_header_carousel_items project_carousel__items2" value='1'>Song Bird</li>
+          <li class="project_header project_header_carousel_items project_carousel__items3" value='2'>Sayin It Sam</li>
         </div>
-        <div class="project project_description">
-          <div class="project_description__text"></div>
+        <div class="project_description project_template">
+          <div class="project_description"></div>
         
             <script id="project-template" type="text/x-handlebars-template">
-              <h3 class="project_name">{{project}}</h3>
-              <h4 class="subheader">{{role}}</h4>
-              <p class="description">{{about}}
+              <div class="project_text">
+              <h3 class=" project_text_project_name">{{project}}</h3>
+              <h4 class=" project_text_subheader">{{role}}</h4>
+              <p class=" project_text_description">{{about}}
               </p>
-            
+            </div>
           </div>
-            <img class="project_description__image__item" src="{{imgurl}}" alt="">
+            <img class="project_image" src="{{imgurl}}" alt="">
         </div>
         
         </script>
