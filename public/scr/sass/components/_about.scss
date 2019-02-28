@@ -4,8 +4,9 @@
   background-image:linear-gradient(to bottom right, rgba(2, 26, 64, .8), rgba(2, 126, 161, 0.8));
 -webkit-clip-path: polygon(0 0, 100% 12%, 100% 100%, 0 100%);
 clip-path: polygon(0 0, 100% 12%, 100% 100%, 0 100%);
-grid-column: 1 / -1;
-margin: 3rem;
+grid-column: 1 / 8;
+// margin: 3rem;
+margin-right: 4rem;
 justify-content: center;
 }
 
@@ -26,7 +27,7 @@ justify-content: center;
   text-align: justify;
 }
 .header_sub {
-  grid-column: 1 / -1;
+  // grid-column: 1 / -1;
   grid-row: 4;
   color: var(color-primary-mid-2);
   justify-self: center;

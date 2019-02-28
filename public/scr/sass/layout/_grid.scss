@@ -1,7 +1,6 @@
 .container {
   display: grid;
-  //causing bug where elements would go behind eachother at a smaller size 
-  // grid-template-rows: 8rem 80vh min-content 40vw repeat(7, min-content);  
+  
   grid-template-columns: minmax(6rem,1fr) repeat(7,[col-start] minmax(min-content, 20rem)[col-end]) minmax(6rem,1fr) [full-end];
  
 }
@@ -49,7 +48,7 @@
 .about {
   grid-gap: 1rem;
   display: grid;
-  grid-column: 1 / -1;
+  // grid-column: 1 / -1;
   grid-row: 5;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: repeat(4) 1fr;

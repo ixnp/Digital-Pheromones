@@ -43,13 +43,12 @@ $(document).ready(function(){
   $('.project_description').html(setup);
 
 
-  $('.project_carousel li').click(function () {
-   
-
+  $(".project_header_carousel_items").click(function() {
     let val = $(this).val();
-    console.log('hi', val)
-    $('.project_description').html(compiledprojectTemplate(projectJson.projects[val]));
-    
+    console.log("hi", val);
+    $(".project_description").html(
+      compiledprojectTemplate(projectJson.projects[val])
+    );
   });
 
   
