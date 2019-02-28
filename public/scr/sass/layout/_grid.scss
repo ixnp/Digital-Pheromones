@@ -2,7 +2,7 @@
   display: grid;
   
   grid-template-columns: minmax(6rem,1fr) repeat(7,[col-start] minmax(min-content, 20rem)[col-end]) minmax(6rem,1fr) [full-end];
- 
+ grid-template-rows: repeat(9);
 }
 .contact {
   grid-column: 7 / full-end;
@@ -20,7 +20,7 @@
   padding:0;
   display: grid;
   @media only screen and (max-width: 700px) {
-          
+          grid-row: 8;
           grid-column: 1/-1;
           
     }

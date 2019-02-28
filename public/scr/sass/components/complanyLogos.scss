@@ -3,6 +3,7 @@
   & h1{
     grid-column: 1/ -1;
     margin: 0;
+    margin-top: 2%;
     color:white;
     text-align: center;
     
@@ -11,16 +12,23 @@
 }
 .partners {
   display: grid;
- grid-template-rows: 1fr 2fr 2fr 2fr;
+ grid-template-rows: 1fr 2fr 2fr;
 grid-template-columns: 1fr 1fr 1fr;
  justify-items: center;
- margin: 1%;
+ margin: 3%;
 }
 .company_logo{
   
   display:grid;
   width: 130px;
-  
+   @media only screen and (min-width: 1500px) {
+         width: 200px;
+          
+    }
+  @media only screen and (max-width: 500px) {
+         max-width: 100%;
+          
+    }
 }
 
 .company-headers{
