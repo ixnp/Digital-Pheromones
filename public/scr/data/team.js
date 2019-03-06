@@ -5,21 +5,21 @@ let team = {
   'teamMembers': [
     {
       'name': 'Dr. Zachary Rubin',
-      'img': 'scr/img/zac.png',
+      'imgurl': 'scr/img/sam.PNG',
       'link' : 'test',
       'info' : 'Zac likes bunnies'
     },
     {
       'name': 'Zac',
-      'img': 'scr/img/zac.png',
       'link': 'test',
       'info': 'Zac likes bunnies'
     },
     {
       'name': 'Zac',
-      'img': 'scr/img/zac.png',
+      'imgurl': 'scr/img/sam.PNG',
+      'img': 'scr/img/sam.PNG',
       'link': 'test',
-      'info': 'Zac likes bunnies'
+      'info': 'Zac likesS bunnies'
     },
   ]
 };
