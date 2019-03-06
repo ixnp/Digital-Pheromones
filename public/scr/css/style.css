@@ -300,6 +300,15 @@ a {
     grid-column: 2;
     width: 90%;
     padding: 5%; }
+  @media only screen and (max-width: 750px) {
+    .project .project_template {
+      display: inline; }
+    .project .project_header_h1 {
+      padding: 2rem;
+      font-size: 3rem; }
+    .project .project_header_carousel {
+      padding: 1rem;
+      font-size: 1.8rem; } }
   @media only screen and (min-device-width: 376px) and (max-device-width: 750px) {
     .project .project_template {
       display: inline; }
