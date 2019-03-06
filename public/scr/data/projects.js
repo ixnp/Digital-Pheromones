@@ -54,7 +54,3 @@ $(document).ready(function(){
   
 });
  
-// $(".project_carousel li").click(function(){
-//   let val = $(this).val();
-  
-// });
