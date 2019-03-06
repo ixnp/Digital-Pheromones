@@ -16,7 +16,7 @@ let team = {
     },
     {
       "name": "Zac",
-      "img": "scr/img/zac.png",
+      "img": 'scr / img / Songbird_Logo_410x.png',
       "link": "",
       "info": "Zac likes bunnies"
     },
