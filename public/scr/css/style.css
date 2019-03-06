@@ -302,7 +302,13 @@ a {
     padding: 5%; }
   @media only screen and (max-width: 750px) {
     .project .project_template {
-      display: inline; } }
+      display: inline; }
+    .project .project_header_h1 {
+      padding: 2rem;
+      font-size: 3rem; }
+    .project .project_header_carousel {
+      padding: 1rem;
+      font-size: 1.9rem; } }
   @media only screen and (min-width: 1050px) {
     .project .project_header_h1 {
       font-size: 6rem; }
