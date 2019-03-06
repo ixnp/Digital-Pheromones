@@ -300,7 +300,7 @@ a {
     grid-column: 2;
     width: 90%;
     padding: 5%; }
-  @media only screen and (max-width: 750px) {
+  @media only screen and (min-device-width: 376px) and (max-device-width: 750px) {
     .project .project_template {
       display: inline; }
     .project .project_header_h1 {
@@ -308,7 +308,13 @@ a {
       font-size: 3rem; }
     .project .project_header_carousel {
       padding: 1rem;
-      font-size: 1.9rem; } }
+      font-size: 1.8rem; } }
+  @media only screen and (max-device-width: 375px) {
+    .project .project_template {
+      display: inline; }
+    .project .project_header_carousel {
+      padding: .5rem;
+      font-size: 1.5rem; } }
   @media only screen and (min-width: 1050px) {
     .project .project_header_h1 {
       font-size: 6rem; }
