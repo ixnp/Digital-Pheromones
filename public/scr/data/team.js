@@ -4,19 +4,19 @@ let team = {
   "teamMembers": [
     {
       "name": "Dr. Zachary Rubin",
-  "img" : "zac.png",
+      "img": "scr/img/zac.png",
   "link" : "",
   "info" : "Zac likes bunnies"
 },
     {
       "name": "Zac",
-      "img": "zac.png",
+      "img": "scr/img/zac.png",
       "link": "",
       "info": "Zac likes bunnies"
     },
     {
       "name": "Zac",
-      "img": "zac.png",
+      "img": "scr/img/zac.png",
       "link": "",
       "info": "Zac likes bunnies"
     },
