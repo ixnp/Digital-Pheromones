@@ -86,6 +86,14 @@
           font-size: 1.5rem;
         }
     }
+      @media only screen and (max-width: 450px) {
+      
+    
+        .project_header_carousel{
+          padding: .5rem;
+          font-size: 1rem;
+        }
+    }
       @media only screen and (min-width: 1050px) {
       
         .project_header_h1{
