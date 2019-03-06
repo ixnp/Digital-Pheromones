@@ -117,14 +117,6 @@ textarea {
     .experiences {
       grid-template-columns: repeat(auto-fit, minmax(1rem, 30rem)); } }
 
-.about {
-  grid-gap: 1rem;
-  display: grid;
-  grid-row: 5;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(4) 1fr;
-  justify-content: center; }
-
 .navigation {
   z-index: 2;
   grid-column: 2/-1;
@@ -310,6 +302,17 @@ a {
   @media only screen and (max-width: 750px) {
     .project .project_template {
       display: inline; } }
+  @media only screen and (min-width: 1050px) {
+    .project .project_header_h1 {
+      font-size: 6rem; }
+    .project .project_header_carousel {
+      font-size: 4.5rem; }
+    .project .project_text_project_name {
+      font-size: 4rem; }
+    .project .project_text_subheader {
+      font-size: 3.5rem; }
+    .project .project_text_description {
+      font-size: 2.8rem; } }
 
 .experiences {
   margin-bottom: 3rem;
@@ -468,6 +471,12 @@ a {
       grid-column: 1/-1; } }
 
 .about {
+  grid-gap: 1rem;
+  display: grid;
+  grid-row: 5;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(4) 1fr;
+  justify-content: center;
   color: var(--color-primary-dark-2);
   background-image: linear-gradient(to bottom right, rgba(2, 26, 64, 0.8), rgba(2, 126, 161, 0.8));
   -webkit-clip-path: polygon(0 0, 100% 12%, 100% 100%, 0 100%);
@@ -475,6 +484,10 @@ a {
   grid-column: 1 / 8;
   margin-right: 4rem;
   justify-content: center; }
+  @media only screen and (max-width: 750px) {
+    .about {
+      display: inline;
+      padding-top: 3rem; } }
 
 .about_header {
   color: white;
@@ -484,6 +497,9 @@ a {
   padding-bottom: 1rem;
   text-align: center;
   padding: 3% 1% 1% 1%; }
+  @media only screen and (max-width: 750px) {
+    .about_header {
+      padding-top: 12rem; } }
 
 .about_info {
   grid-column: 1 / -1;
@@ -501,6 +517,9 @@ a {
   display: grid;
   grid-row: 5;
   grid-template-rows: repeat(auto-fit, minmax(3rem, 25rem)); }
+  @media only screen and (max-width: 750px) {
+    .about_members .project_template {
+      display: inline; } }
 
 .about_members_img {
   max-width: 250px;

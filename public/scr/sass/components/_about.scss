@@ -1,5 +1,14 @@
 //items are rendering to the dom they are just not visible for some reason
 .about {
+
+    grid-gap: 1rem;
+  display: grid;
+  // grid-column: 1 / -1;
+  grid-row: 5;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(4) 1fr;
+  justify-content: center;
+
   color: var(--color-primary-dark-2);
   background-image:linear-gradient(to bottom right, rgba(2, 26, 64, .8), rgba(2, 126, 161, 0.8));
 -webkit-clip-path: polygon(0 0, 100% 12%, 100% 100%, 0 100%);
@@ -8,6 +17,12 @@ grid-column: 1 / 8;
 // margin: 3rem;
 margin-right: 4rem;
 justify-content: center;
+ @media only screen and (max-width: 750px) {
+      
+          
+            display: inline;
+          padding-top: 3rem;
+    }
 }
 
 .about_header {
@@ -18,6 +33,11 @@ justify-content: center;
   padding-bottom: 1rem;
   text-align: center;
   padding: 3% 1% 1% 1%;
+   @media only screen and (max-width: 750px) {
+      
+          
+          padding-top: 12rem;
+    }
   
 }
 .about_info {
@@ -39,6 +59,12 @@ justify-content: center;
   display: grid;
   grid-row: 5;
   grid-template-rows:repeat(auto-fit, minmax(3rem, 25rem));
+   @media only screen and (max-width: 750px) {
+      
+          .project_template {
+            display: inline;
+          }
+    }
 }
 .about_members_img {
  

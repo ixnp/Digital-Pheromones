@@ -78,4 +78,22 @@
             display: inline;
           }
     }
+      @media only screen and (min-width: 1050px) {
+      
+        .project_header_h1{
+          font-size: 6rem;
+        }
+        .project_header_carousel{
+          font-size: 4.5rem;
+        }
+        .project_text_project_name{
+          font-size: 4rem;
+        }
+        .project_text_subheader{
+          font-size: 3.5rem;
+        }
+        .project_text_description{
+          font-size: 2.8rem;
+        }
+    }
 }
