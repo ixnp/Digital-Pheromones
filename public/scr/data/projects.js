@@ -40,17 +40,40 @@ $(document).ready(function(){
   let compiledprojectTemplate = Handlebars.compile(projectTemplate);
   let setup = compiledprojectTemplate(projectJson.projects[0]);
 
+
   $('.project_description').html(setup);
 
+  
 
   $(".project_header_carousel_items").click(function() {
     let val = $(this).val();
+    let valSecond = 0;
+    let valThirds = 0;
     console.log("hi", val);
+    if(val === 0){
+       valSecond = 1;
+       valThirds = 2;
+    }else if (val === 1){
+      valSecond = 2;
+      valThirds = 0;
+    } else {
+      valSecond = 1;
+      valThirds = 0;
+    }
+    $(`.project_carousel__items${val}`).addClass('select');
+    $(`.project_carousel__items${valSecond}`).removeClass('select');
+    $(`.project_carousel__items${valThirds}`).removeClass('select');
     $(".project_description").html(
       compiledprojectTemplate(projectJson.projects[val])
     );
   });
 
-  
+
+  $('.autoplay').slick({
+    
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  });
 });
  

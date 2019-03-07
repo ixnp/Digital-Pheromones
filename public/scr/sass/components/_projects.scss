@@ -21,18 +21,29 @@
       font-size: 3.5rem;
       font-weight: 750;
       text-align: center;
+      //  text-decoration: underline;
     }
     &_carousel {
       grid-row: 2;
       display: flex;
       flex-direction: row;
       justify-content: center;
+      padding-bottom: 0;
 
       &_items {
         list-style-type: none;
         font-weight: 100;
         margin-left: 2rem;
         margin-right: 2rem;
+        // text-decoration: underline;
+          background-color: var(--color-primary-dark-2);
+
+  border: none;
+  border-radius: 2rem;
+  padding: 0rem 1rem 0rem 1rem;
+  margin-bottom: 1rem;
+
+
       }
     }
   }
@@ -129,4 +140,8 @@
           font-size: 2.8rem;
         }
     }
+}
+
+.select{
+  color:var(--color-primary-light)
 }
