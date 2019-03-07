@@ -54,6 +54,8 @@ p, h4, div {
   font-size: 2.5rem; }
 
 .btn {
+  background-color: var(--color-primary-mid-2);
+  color: var(--color-grey-light-4);
   border: none;
   border-radius: 1rem;
   font-size: 2rem;
@@ -127,8 +129,10 @@ textarea {
   right: 0;
   top: 0;
   color: var(--color-grey-light-3);
-  background-color: var(--color-primary-mid-2);
   border-radius: 3% 0% 0% 3%; }
+  @media only screen and (min-width: 700px) {
+    .navigation {
+      background-color: var(--color-primary-mid-2); } }
 
 .navigation-inner {
   z-index: 1;
@@ -147,7 +151,8 @@ textarea {
   padding: 1rem;
   position: -webkit-sticky;
   position: sticky;
-  top: 0; }
+  top: 0;
+  padding: 0rem 1rem 0rem 1rem; }
   .menu li:hover {
     color: var(--color-primary-light); }
 

@@ -9,8 +9,16 @@
   right: 0;
   top:0;
   color: var(--color-grey-light-3);
-  background-color: var(--color-primary-mid-2);
   border-radius: 3% 0% 0% 3%;
+ 
+  
+ @media only screen and (min-width: 700px) {
+        
+             background-color: var(--color-primary-mid-2);
+            
+       
+                      
+    }
   
 }
 
@@ -36,6 +44,7 @@
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  padding: 0rem 1rem 0rem 1rem;
   &:hover{
     color: var(--color-primary-light);
 
