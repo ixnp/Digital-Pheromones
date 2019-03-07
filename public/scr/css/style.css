@@ -54,8 +54,6 @@ p, h4, div {
   font-size: 2.5rem; }
 
 .btn {
-  background-color: var(--color-primary-mid-2);
-  color: var(--color-grey-light-4);
   border: none;
   border-radius: 1rem;
   font-size: 2rem;
@@ -119,7 +117,7 @@ textarea {
       grid-template-columns: repeat(auto-fit, minmax(1rem, 30rem)); } }
 
 .navigation {
-  z-index: 2;
+  z-index: 6;
   grid-column: 2/-1;
   grid-row: 1;
   display: grid;
@@ -128,7 +126,9 @@ textarea {
   position: fixed;
   right: 0;
   top: 0;
-  color: var(--color-grey-light-3); }
+  color: var(--color-grey-light-3);
+  background-color: var(--color-primary-mid-2);
+  border-radius: 3% 0% 0% 3%; }
 
 .navigation-inner {
   z-index: 1;

@@ -1,5 +1,5 @@
 .navigation{
-  z-index: 2;
+  z-index: 6;
   grid-column: 2/-1;
   grid-row: 1;
   display: grid;
@@ -9,6 +9,8 @@
   right: 0;
   top:0;
   color: var(--color-grey-light-3);
+  background-color: var(--color-primary-mid-2);
+  border-radius: 3% 0% 0% 3%;
   
 }
 
