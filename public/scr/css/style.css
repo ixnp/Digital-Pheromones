@@ -560,6 +560,7 @@ a {
       display: inline; } }
 
 .about_members_img {
+  padding: 1rem;
   max-width: 250px;
   grid-column: 1 / -1;
   grid-row: 1;
@@ -570,10 +571,12 @@ a {
       max-width: 200px; } }
 
 .about_name {
+  text-decoration: underline;
   grid-column: 1 / -1;
   grid-row: 2;
   justify-self: center;
-  margin: 2rem; }
+  margin: 2rem;
+  color: var(--color-grey-light-2); }
   @media only screen and (max-width: 700px) {
     .about_name {
       font-size: 2.2rem;
